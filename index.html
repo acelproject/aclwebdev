@@ -89,7 +89,7 @@
     <!-- Header end-->
 
     <!-- Hero  -->
-    <section id="home" class="pt-36">
+    <section id="home" class="pt-36 z-10">
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full self-center px-4 lg:w-1/2 lg:pl-[150px] lg:-mt-16">
@@ -108,15 +108,14 @@
                 Content Creator
               </h2>
             </div>
-            <p class="font-medium text-slate-600 mb-10 lg:mb-6 leading-relaxed">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
-              perferendis.
+            <p class="italic text-slate-600  lg:mb-4 mb-3 leading-relaxed">
+              "Kata-kata Hari Ini."
             </p>
 
-            <a
-              href="#"
+            <button
+              id="btn-quote"
               class="text-base font-semibold text-white py-3 px-8 bg-primary rounded-full hover:shadow-lg hover:opacity-90 transition duration-300 ease-in-out"
-              >Hubungi saya</a
+              >Get Quotes</button
             >
           </div>
           <div class="w-full self-end px-4 lg:w-1/2">
@@ -143,6 +142,27 @@
       </div>
     </section>
     <!-- Hero End  -->
+
+    <!-- Quotes -->
+    <div id="quote" class="fixed w-full h-full bg-[#000000ce] flex top-0 items-center justify-center -z-10 px-8 opacity-0 transition">
+      <div
+      id="quote-card"
+          class="animate-naik-turun max-w-xl md:mx-auto mx-8 bg-white rounded-lg p-12  flex flex-col absolute transition ease-linear delay-200" data-aos="fade-down"
+        >
+          <a href=""
+          id="close-quote"
+            class="h-10 w-10 rounded-full bg-primary flex items-center absolute right-[-15px] top-[-15px] cursor-pointer"
+          >
+            <span class="font-semibold text-white m-auto"
+            ><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg></span>
+          </a>
+          <h1 class="text-2xl font-bold text-center mb-3 text-primary">Kata-kata Hari Ini</h1>
+          <div>
+            <p class="italic text-2xl text-center">"Hinaan Adalah motivasi Yang Nyata."</p>
+          </div>
+        </div>
+    </div>
+    <!-- Quotes end-->
 
     <!-- About -->
     <section id="about" class="pt-36 pb-32">
@@ -702,6 +722,12 @@
     </section>
     <!-- Footer end-->
 
+
+
+    <script
+      src="https://kit.fontawesome.com/71bba478e7.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="dist/js/script.js"></script>
   </body>
 </html>
