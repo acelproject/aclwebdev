@@ -12,6 +12,7 @@
   box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
 }
 
+
 .nav-active {
   @apply opacity-100;
 }
@@ -28,4 +29,10 @@
 }
 .hamburger-active span:nth-child(3) {
   @apply -rotate-45;
+}
+
+@layer base{
+  html {
+  scroll-behavior: smooth;
+}
 }
