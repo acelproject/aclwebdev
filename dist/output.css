@@ -596,6 +596,10 @@ html {
   top: -1rem;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
 .left-0 {
   left: 0px;
 }
@@ -604,12 +608,20 @@ html {
   left: 50%;
 }
 
+.right-0 {
+  right: 0px;
+}
+
 .right-4 {
   right: 1rem;
 }
 
 .right-\[-15px\] {
   right: -15px;
+}
+
+.right-\[-330px\] {
+  right: -330px;
 }
 
 .top-0 {
@@ -624,6 +636,18 @@ html {
   top: 100%;
 }
 
+.right-\[30px\] {
+  right: 30px;
+}
+
+.right-\[20px\] {
+  right: 20px;
+}
+
+.right-\[10px\] {
+  right: 10px;
+}
+
 .-z-10 {
   z-index: -10;
 }
@@ -632,8 +656,16 @@ html {
   z-index: 10;
 }
 
+.z-\[9999\] {
+  z-index: 9999;
+}
+
 .m-1 {
   margin: 0.25rem;
+}
+
+.m-5 {
+  margin: 1.25rem;
 }
 
 .m-auto {
@@ -792,8 +824,25 @@ html {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.translate-x-\[-230px\] {
-  --tw-translate-x: -230px;
+.translate-y-\[2px\] {
+  --tw-translate-y: 2px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-rotate-45 {
+  --tw-rotate: -45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.scale-0 {
+  --tw-scale-x: 0;
+  --tw-scale-y: 0;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.scale-\[0\] {
+  --tw-scale-x: 0;
+  --tw-scale-y: 0;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -812,7 +861,7 @@ html {
 }
 
 .animate-naik-turun {
-  animation: naikTurun 3s ease-in-out;
+  animation: naikTurun 1s ease-in-out;
 }
 
 .cursor-pointer {
@@ -949,6 +998,11 @@ html {
   padding: 1rem;
 }
 
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -982,11 +1036,6 @@ html {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.px-12 {
-  padding-left: 3rem;
-  padding-right: 3rem;
 }
 
 .pb-12 {
@@ -1131,10 +1180,6 @@ html {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.opacity-0 {
-  opacity: 0;
-}
-
 .opacity-60 {
   opacity: 0.6;
 }
@@ -1195,13 +1240,15 @@ html {
   z-index: 15;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.3;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  --tw-backdrop-blur: blur(4px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
   box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
 }
 
 .nav-active {
-  opacity: 1;
+  /* transform:translateX(-230px); */
+  transform: scale(1);
 }
 
 .hamburger-line {
@@ -1232,7 +1279,9 @@ html {
 
 .quote-active {
   z-index: 20;
-  opacity: 1;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .after\:ml-1::after {
@@ -1254,6 +1303,28 @@ html {
 .invalid\:text-red-500:invalid {
   --tw-text-opacity: 1;
   color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
+@keyframes scrollup {
+  0%,100% {
+    transform: rotate(-3deg);
+  }
+
+  50%,70% {
+    transform: translateY(5px);
+  }
+
+  70% {
+    transform: translateY(-5px);
+  }
+
+  50% {
+    transform: rotate(3deg);
+  }
+}
+
+.hover\:animate-scrollup:hover {
+  animation: scrollup 2s ease-in-out infinite;
 }
 
 .hover\:border-primary:hover {
@@ -1437,6 +1508,12 @@ html {
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
+  .lg\:scale-100 {
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
   .lg\:rounded-none {
     border-radius: 0px;
   }
@@ -1481,10 +1558,6 @@ html {
   .lg\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
-  }
-
-  .lg\:opacity-100 {
-    opacity: 1;
   }
 
   .lg\:shadow-none {
