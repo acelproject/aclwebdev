@@ -12,8 +12,7 @@
 }
 
 .nav-active {
-  /* transform:translateX(-230px); */
-  transform: scale(1);
+  @apply translate-x-[-20px]
 }
 
 .hamburger-line {

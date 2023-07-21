@@ -58,6 +58,16 @@ btnCloseQuote.addEventListener("click", () => {
 window.addEventListener("click", (e) => {
   if (e.target != hamburger && e.target != navMenu) {
     hamburger.classList.remove("hamburger-active");
-  navMenu.classList.remove("nav-active");
+    navMenu.classList.remove("nav-active");
   }
 });
+
+// const tes = document.querySelector('.tes');
+
+
+// const focus = ()=>{
+//   return 'focuuussss';
+// }
+
+
+// console.log(focus());

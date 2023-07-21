@@ -18,7 +18,7 @@ module.exports = {
       animation: {
         "spin-slow": "spin 2s linear infinite",
         goyang: "goyang 1s ease-in-out infinite",
-        "scrollup": "scrollup 2s ease-in-out infinite",
+        "scrollup": "scrollup 1s ease-in-out infinite",
         "naik-turun": "naikTurun 1s ease-in-out",
       },
       keyframes: {

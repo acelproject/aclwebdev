@@ -6,17 +6,69 @@
     <title>Aclwebdev</title>
     <link rel="stylesheet" href="dist/output.css" />
   </head>
-  <body>
+  <body class="overflow-x-hidden">
     <!-- Back to top -->
+
     <a
       href="#"
-      class="scrollup scale-0 fixed bottom-0 right-0 z-[9999] m-5 rounded-full bg-primary px-3 py-2 text-2xl shadow-md transition"
+      class="scrollup fixed bottom-0 right-0 z-[9999] m-5 scale-0 rounded-full bg-primary px-3 py-2 text-2xl shadow-md transition"
       ><div class="text-white hover:animate-scrollup">
-        <i class="fas fa-rocket -rotate-45 translate-y-[2px]"></i></div
+        <i class="fas fa-rocket translate-y-[2px] -rotate-45"></i></div
     ></a>
     <!-- End Back to top -->
 
     <!-- Header -->
+    <!-- Menu nav on small devices -->
+    <div
+      id="nav-menu"
+      class="fixed right-[0px] translate-x-[270px] top-20 z-[999] w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg transition ease-in-out lg:static lg:max-w-full lg:translate-x-[-0px] lg:hidden lg:rounded-none lg:bg-transparent lg:shadow-none"
+    >
+      <ul class="block lg:flex">
+        <li class="group">
+          <a
+            href="#home"
+            class="mx-8 flex py-2 text-base text-mydark group-hover:text-primary"
+            >Beranda</a
+          >
+        </li>
+        <li class="group">
+          <a
+            href="#about"
+            class="mx-8 flex py-2 text-base text-mydark group-hover:text-primary"
+            >Tentang saya</a
+          >
+        </li>
+        <li class="group">
+          <a
+            href="#portfolio"
+            class="mx-8 flex py-2 text-base text-mydark group-hover:text-primary"
+            >Portfolio</a
+          >
+        </li>
+        <li class="group">
+          <a
+            href="#clients"
+            class="mx-8 flex py-2 text-base text-mydark group-hover:text-primary"
+            >Clients</a
+          >
+        </li>
+        <li class="group">
+          <a
+            href="#blog"
+            class="mx-8 flex py-2 text-base text-mydark group-hover:text-primary"
+            >Blog</a
+          >
+        </li>
+        <li class="group">
+          <a
+            href="#contact"
+            class="mx-8 flex py-2 text-base text-mydark group-hover:text-primary"
+            >Kontak</a
+          >
+        </li>
+      </ul>
+    </div>
+    <!-- Menu nav on small devices end-->
     <header
       class="absolute left-0 top-0 z-10 flex w-full items-center bg-transparent transition lg:px-36"
     >
@@ -44,7 +96,7 @@
             </button>
             <nav
               id="nav-menu"
-              class="absolute top-full z-10 w-full max-w-[250px] right-[10px] scale-[0] rounded-lg bg-white py-5 shadow-lg transition ease-in-out lg:static lg:max-w-full lg:translate-x-[-0px] lg:rounded-none lg:bg-transparent lg:scale-100 lg:shadow-none"
+              class="absolute right-[0px] top-full z-[999] hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg transition ease-in-out lg:static lg:max-w-full lg:translate-x-[-0px] lg:flex lg:rounded-none lg:bg-transparent lg:shadow-none"
             >
               <ul class="block lg:flex">
                 <li class="group">
