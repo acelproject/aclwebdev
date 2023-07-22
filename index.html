@@ -84,8 +84,13 @@
             id="dark-mode-small"
             class="relative ml-8 flex h-7 w-7 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-slate-100 p-2"
           >
+            <input
+              type="checkbox"
+              id="input-dark-small"
+              class="absolute left-1 top-1 z-10 h-5 w-5 cursor-pointer opacity-0"
+            />
             <div
-              id="dark-icon-small"
+              id="dark-icon"
               class="absolute flex translate-y-[14px] flex-col transition ease-linear"
             >
               <span class="light text-lg text-primary">
@@ -180,7 +185,11 @@
                     id="dark-mode"
                     class="relative ml-8 flex h-7 w-7 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-slate-100 p-2"
                   >
-                  <input type="checkbox" id="input-dark" class="absolute top-1 opacity-0 cursor-pointer z-10 left-1 w-5 h-5">
+                    <input
+                      type="checkbox"
+                      id="input-dark"
+                      class="absolute left-1 top-1 z-10 h-5 w-5 cursor-pointer opacity-0"
+                    />
                     <div
                       id="dark-icon"
                       class="absolute flex translate-y-[14px] flex-col transition ease-linear"
@@ -247,7 +256,7 @@
                 src="dist/img/acel.png"
                 alt=""
                 id="hero-img"
-                class="relative z-[10] mx-auto max-w-full"
+                class="relative z-10 mx-auto max-w-full"
               />
               <span
                 class="absolute -top-4 left-1/2 h-[400px] w-[400px] -translate-x-1/2 sm:h-[600px] sm:w-[600px]"

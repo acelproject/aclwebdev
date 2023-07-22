@@ -36,6 +36,9 @@
 #input-dark:checked ~ #dark-icon {
   @apply translate-y-[-14px];
 }
+#input-dark-small:checked ~ #dark-icon {
+  @apply translate-y-[-14px];
+}
 
 @layer base {
   html {

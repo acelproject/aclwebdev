@@ -124,13 +124,29 @@ if (
 
 // Darkmode on small devive
 const btnDarkModeSmallDev = document.querySelector("#dark-mode-small");
-const darkIconSmallDev = document.querySelector("#dark-icon-small");
+const inputDarkSmall = document.querySelector("#input-dark-small");
 
 btnDarkModeSmallDev.addEventListener("click", () => {
-  const e = darkIcon.classList.toggle("darkmode-active");
-
-  html.classList.toggle("dark");
+  if (inputDarkSmall.checked) {
+    html.classList.add("dark");
+    // darkIcon.classList.add("darkmode-active");
+    localStorage.theme = "dark";
+  } else {
+    // darkIcon.classList.remove("darkmode-active");
+    html.classList.remove("dark");
+    localStorage.theme = "light";
+  }
 });
+
+if (
+  localStorage.theme === "dark" ||
+  (!("theme" in localStorage) &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches)
+) {
+  inputDarkSmall.checked = true;
+} else {
+  inputDarkSmall.checked = false;
+}
 
 // const tes = document.querySelector('.tes');
 
