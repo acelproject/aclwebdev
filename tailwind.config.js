@@ -1,24 +1,25 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./index.html'],
+  content: ["./index.html"],
+  darkMode: "class",
   theme: {
-    container:{
+    container: {
       center: true,
-      padding: '16px'
+      padding: "16px",
     },
     extend: {
       colors: {
-        primary: '#ffbe0b',
-        mydark :'#202020',
-        bglight :'#f8f9fa',
+        primary: "#ffbe0b",
+        mydark: "#202020",
+        bglight: "#f8f9fa",
       },
-      screens:{
-        '2xl' : '1320px'
+      screens: {
+        "2xl": "1320px",
       },
       animation: {
         "spin-slow": "spin 2s linear infinite",
         goyang: "goyang 1s ease-in-out infinite",
-        "scrollup": "scrollup 1s ease-in-out infinite",
+        scrollup: "scrollup 1s ease-in-out infinite",
         "naik-turun": "naikTurun 1s ease-in-out",
       },
       keyframes: {
@@ -42,5 +43,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
-
+};
