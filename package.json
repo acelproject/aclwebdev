@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "aclwebdev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    "aclwebdev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "aclwebdev-minify": "npx tailwindcss -i ./src/input.css -o ./dist/final.css --minify"
   },
   "keywords": [],
   "author": "",
