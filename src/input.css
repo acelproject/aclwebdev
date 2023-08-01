@@ -17,6 +17,16 @@
   @apply translate-x-[-20px]
 }
 
+nav ul .group::after{
+  @apply w-0 bg-primary h-[2px] block mx-auto;
+  content:'';
+  transition :0.5s;
+}
+
+nav ul .group:hover::after{
+  @apply w-[30px]
+}
+
 .hamburger-line {
   @apply my-2 block h-[2px] w-[30px] bg-mydark dark:bg-white;
 }

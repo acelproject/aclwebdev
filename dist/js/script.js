@@ -25,6 +25,9 @@ window.addEventListener("scroll", function () {
   }
 });
 
+// nav menus click
+
+
 // bact to top
 const btnScrollUp = document.querySelector(".scrollup");
 const icon = document.querySelector(".scrollup div");
