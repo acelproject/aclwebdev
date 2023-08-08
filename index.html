@@ -84,11 +84,29 @@
             >Kontak</a
           >
         </li>
-        <li class="mb-2 mt-3 flex items-center">
-          <!-- Darkmode -->
-          <div
+      </ul>
+    </div>
+    <!-- Menu nav on small devices end-->
+    <header
+      class="absolute left-0 top-0 z-10 flex h-[100px] w-full items-center transition-all ease-linear lg:px-36"
+    >
+      <div class="container">
+        <div class="relative flex items-center justify-between">
+          <div class="flex px-3 text-2xl font-bold">
+            <a href="#" class="font-viga dark:text-white">
+              <!-- <img src="dist/img/logo.png" class="h-7 w-9 rounded-full inline-flex mr-4" alt=""> -->
+              <span class="text-primary">{</span>aclwebdev<span
+                class="text-primary"
+                >}</span
+              >
+            </a>
+          </div>
+          <div class="flex items-center px-4">
+            <div class="relative flex items-center gap-5">
+              <!-- Darkmode -->
+            <div
             id="dark-mode-small"
-            class="relative ml-8 flex h-7 w-7 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-slate-100 p-2"
+            class="relative ml-8 flex h-7 w-7 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-slate-100 p-2 lg:invisible"
           >
             <input
               type="checkbox"
@@ -108,39 +126,21 @@
             </div>
           </div>
           <!-- End Darkmode -->
-        </li>
-      </ul>
-    </div>
-    <!-- Menu nav on small devices end-->
-    <header
-      class="absolute left-0 top-0 z-10 flex h-[100px] w-full items-center transition-all ease-linear lg:px-36"
-    >
-      <div class="container">
-        <div class="relative flex items-center justify-between">
-          <div class="flex px-3 text-2xl font-bold">
-            <a href="#" class="font-viga dark:text-white">
-              <!-- <img src="dist/img/logo.png" class="h-7 w-9 rounded-full inline-flex mr-4" alt=""> -->
-              <span class="text-primary">{</span>aclwebdev<span
-                class="text-primary"
-                >}</span
-              >
-            </a>
-          </div>
-          <div class="flex items-center px-4">
-            <button
-              id="hamburger"
-              name="hamburger"
-              type="button"
-              class="absolute right-4 block lg:hidden"
-            >
-              <span
-                class="hamburger-line origin-top-left transition ease-in-out"
-              ></span>
-              <span class="hamburger-line transition ease-in-out"></span>
-              <span
-                class="hamburger-line origin-bottom-left transition ease-in-out"
-              ></span>
-            </button>
+          <button
+            id="hamburger"
+            name="hamburger"
+            type="button"
+            class=" right-4 block lg:hidden"
+          >
+            <span
+              class="hamburger-line origin-top-left transition ease-in-out"
+            ></span>
+            <span class="hamburger-line transition ease-in-out"></span>
+            <span
+              class="hamburger-line origin-bottom-left transition ease-in-out"
+            ></span>
+          </button>
+            </div>
             <nav
               id="nav-menu"
               class="absolute right-[0px] top-full z-[999] hidden w-full max-w-[250px] rounded-lg py-5 shadow-lg transition ease-in-out lg:static lg:flex lg:max-w-full lg:translate-x-[-0px] lg:rounded-none lg:bg-transparent lg:shadow-none"
@@ -223,7 +223,10 @@
     <!-- Header end-->
 
     <!-- Hero  -->
-    <section id="home" class="-z-20 h-[100vh] pt-36 transition dark:bg-mydark">
+    <section
+      id="home"
+      class="-z-20 pt-36 transition dark:bg-mydark lg:h-[100vh]"
+    >
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full self-center px-4 lg:w-1/2 lg:pl-[150px]">
@@ -235,18 +238,18 @@
               </h1>
               <div class="nama-wrap relative mb-16 lg:mb-16">
                 <h1
-                  class="nama-child-1 absolute mb-3 mt-1 block text-4xl font-bold text-transparent lg:text-5xl"
+                  class="nama-child-1 absolute mt-1 block text-5xl font-bold text-transparent lg:text-5xl"
                 >
                   Marchel Lumimpah
                 </h1>
                 <h1
-                  class="nama-child-2 absolute mb-3 mt-1 block text-4xl font-bold text-primary lg:text-5xl"
+                  class="nama-child-2 absolute mt-1 block text-5xl font-bold text-primary lg:text-5xl"
                 >
                   Marchel Lumimpah
                 </h1>
               </div>
               <h2
-                class="mt-5 inline-block text-lg font-medium text-slate-600 dark:text-slate-300 lg:mb-8 lg:mt-0"
+                class="mt-12 inline-block text-lg font-medium text-slate-600 dark:text-slate-300 lg:mb-8 lg:mt-0"
               >
                 Web Engineer |
                 <span class="text-mydark dark:text-white"
@@ -386,7 +389,7 @@
             >
           </div>
           <div
-            class="hero-image relative h-[360px] w-[360px] overflow-hidden lg:right-[-130px] lg:top-6"
+            class="hero-image relative mx-auto mt-10 h-[360px] w-[360px] overflow-hidden md:mx-0 lg:right-[-130px] lg:top-6"
           >
             <img
               src="dist/img/acel.png"
@@ -458,7 +461,10 @@
     <!-- Quotes end-->
 
     <!-- About -->
-    <section id="about" class="pb-32 pt-40 dark:bg-mydark">
+    <section
+      id="about"
+      class="md:sm-20 pb-32 pt-24 dark:bg-mydark lg:mt-0 lg:pt-36"
+    >
       <div class="container">
         <div class="flex flex-wrap">
           <div class="mb-10 w-full px-4 lg:w-1/2 lg:pl-[150px]">
@@ -490,10 +496,12 @@
 
             <!-- React js, Tailwind CSS, Bootstrap, Git, Laravel, dan node js. -->
           </div>
-          <div class="mx-auto w-full px-4 lg:w-1/2 flex justify-center">
+          <div
+            class="mx-auto flex w-full flex-col items-center justify-center px-4 lg:w-1/2"
+          >
             <div class="">
               <h3
-                class="mb-3 text-2xl font-semibold text-mydark dark:text-white lg:pt-12 lg:text-3xl"
+                class="mb-3 mt-10 text-center text-2xl font-semibold text-mydark dark:text-white md:mt-0 md:text-left lg:pt-12 lg:text-3xl"
               >
                 Keahlian saya
               </h3>
@@ -612,6 +620,9 @@
                   </svg>
                 </a>
               </div>
+            </div>
+            <div class="">
+              <img src="dist/img/work.png" alt="" />
             </div>
           </div>
         </div>

@@ -56,17 +56,17 @@ nav ul .group:hover::after {
   border: 2px solid #ffbe0b;
 }
 
-.btn-shadow{
-  box-shadow: 0.35rem 0.35rem #ffbe0b;
+.btn-shadow {
+  box-shadow: 0.3rem 0.3rem #ffbe0b;
   border: 1px solid #ffbe0b;
 }
-.btn-shadow:hover{
-  transform:translate(0.125rem,0.125rem);
-  box-shadow: 0.25rem 0.25rem #ffbe0b;
+.btn-shadow:hover {
+  transform: translate(0.12rem, 0.12rem);
+  box-shadow: 0.2rem 0.2rem #ffbe0b;
 }
-.btn-shadow:active{
-  transform:translate(0.125rem,0.125rem);
-  box-shadow: 0.25rem 0.25rem #ffbe0b;
+.btn-shadow:active {
+  transform: translate(0.125rem, 0.125rem);
+  box-shadow: 0.2rem 0.2rem #ffbe0b;
 }
 
 @layer base {
