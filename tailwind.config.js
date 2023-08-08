@@ -13,6 +13,9 @@ module.exports = {
         mydark: "#202020",
         bglight: "#f8f9fa",
       },
+      fontFamily: {
+        viga: ["Viga"],
+      },
       screens: {
         "2xl": "1320px",
       },

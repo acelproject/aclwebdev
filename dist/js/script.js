@@ -27,7 +27,6 @@ window.addEventListener("scroll", function () {
 
 // nav menus click
 
-
 // bact to top
 const btnScrollUp = document.querySelector(".scrollup");
 const icon = document.querySelector(".scrollup div");
@@ -43,35 +42,35 @@ btnScrollUp.addEventListener("click", () => {
 });
 
 // quotes
-const quotes = document.querySelector("#quote");
-const btnCloseQuote = document.querySelector("#close-quote");
-const btnQuote = document.querySelector("#btn-quote");
-const quoteCard = document.querySelector("#quote-card");
-const body = document.querySelector("body");
-const heroImg = document.querySelector("#hero-img");
+// const quotes = document.querySelector("#quote");
+// const btnCloseQuote = document.querySelector("#close-quote");
+// const btnQuote = document.querySelector("#btn-quote");
+// const quoteCard = document.querySelector("#quote-card");
+// const body = document.querySelector("body");
+// const heroImg = document.querySelector("#hero-img");
 
-btnQuote.addEventListener("click", () => {
-  const e = quotes.classList.add("quote-active");
-  quoteCard.classList.add("quote-card-active");
+// btnQuote.addEventListener("click", () => {
+//   const e = quotes.classList.add("quote-active");
+//   quoteCard.classList.add("quote-card-active");
 
-  body.classList.add("overflow-hidden");
+//   body.classList.add("overflow-hidden");
 
-  if (this.window.scrollY > 0) {
-    heroImg.classList.remove("z-[10]");
-    heroImg.classList.add("z-[103]");
-  }
-});
+//   if (this.window.scrollY > 0) {
+//     heroImg.classList.remove("z-[10]");
+//     heroImg.classList.add("z-[103]");
+//   }
+// });
 
-btnCloseQuote.addEventListener("click", () => {
-  body.classList.remove("overflow-hidden");
-  const e = quotes.classList.remove("quote-active");
+// btnCloseQuote.addEventListener("click", () => {
+//   body.classList.remove("overflow-hidden");
+//   const e = quotes.classList.remove("quote-active");
 
-  if (e == true) {
-    heroImg.classList.remove("z-[10]");
-    heroImg.classList.add("z-[103]");
-  }
-  quoteCard.classList.remove("quote-card-active");
-});
+//   if (e == true) {
+//     heroImg.classList.remove("z-[10]");
+//     heroImg.classList.add("z-[103]");
+//   }
+//   quoteCard.classList.remove("quote-card-active");
+// });
 
 // close navbar card on small device with klik out side area
 window.addEventListener("click", (e) => {
@@ -89,10 +88,10 @@ window.addEventListener("click", (e) => {
 
 const btnDarkMode = document.querySelector("#dark-mode");
 const darkIcon = document.querySelector("#dark-icon");
-const html = document.querySelector("html");
+const html = document.querySelector("body");
 const inputdarkMode = document.querySelector("#input-dark");
 
-inputdarkMode.addEventListener("click", () => {
+btnDarkMode.addEventListener("click", () => {
   // const e = darkIcon.classList.toggle("darkmode-active");
 
   // html.classList.toggle("dark");
