@@ -1010,6 +1010,10 @@ html {
   align-self: center;
 }
 
+.overflow-auto {
+  overflow: auto;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1492,14 +1496,14 @@ nav ul .group:hover::after {
 .portofolio {
   position: relative;
   background-size: cover;
-  background-image:url('/dist/img/porto.jpg');
-  background-repeat:no-repeat;
-  z-index:5;
+  background-image: url("/dist/img/porto.jpg");
+  background-repeat: no-repeat;
+  z-index: 5;
   background-position: 0px -130px;
 }
 
 @media (width: 375px) {
-  .portofolio{
+  .portofolio {
     background-position: 0px -80px;
     .slider .slide {
       width: 300px;
@@ -1512,31 +1516,31 @@ nav ul .group:hover::after {
   }
 }
 
-@media (width: 414px ) {
+@media (width: 414px) {
   .slider .slide {
     width: 340px;
   }
 }
 
-@media (width: 412px ) {
+@media (width: 412px) {
   .slider .slide {
     width: 340px;
   }
 }
 
-@media (width: 390px ) {
+@media (width: 390px) {
   .slider .slide {
     width: 315px;
   }
 }
 
-@media (width: 393px ) {
+@media (width: 393px) {
   .slider .slide {
     width: 320px;
   }
 }
 
-@media (width: 360px ) {
+@media (width: 360px) {
   .slider .slide {
     width: 285px;
   }
@@ -1562,9 +1566,9 @@ nav ul .group:hover::after {
   display: block;
   height: 100%;
   width: 100%;
-  background-image:linear-gradient(to top,#ffbe0ba5,rgba(0, 0, 0, 0.532));
-  z-index : -9999999;
-  content:'';
+  background-image: linear-gradient(to top, #ffbe0ba5, rgba(0, 0, 0, 0.532));
+  z-index: -9999999;
+  content: "";
 }
 
 .btn-shadow {
