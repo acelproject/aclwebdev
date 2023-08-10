@@ -1504,7 +1504,7 @@ nav ul .group:hover::after {
   }
 
   .slider .slide {
-    width: 302px;
+    width: 310px;
   }
 
   @media (min-width: 768px) {
