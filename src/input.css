@@ -56,6 +56,67 @@ nav ul .group:hover::after {
   border: 2px solid #ffbe0b;
 }
 
+.portofolio{
+  @apply relative bg-cover ;
+  background-image:url('/dist/img/porto.jpg');
+  background-repeat:no-repeat;
+  z-index:5;
+  background-position: 0px -130px;
+}
+
+@media (width: 375px) {
+  .portofolio{
+    background-position: 0px -80px;
+    .slider .slide{
+      @apply w-[300px] md:w-[440px];
+    }
+  }
+}
+@media (width: 414px ) {
+  .slider .slide{
+    @apply w-[340px] ;
+  }
+}
+@media (width: 412px ) {
+  .slider .slide{
+    @apply w-[340px] ;
+  }
+}
+@media (width: 390px ) {
+  .slider .slide{
+    @apply w-[315px] ;
+  }
+}
+@media (width: 393px ) {
+  .slider .slide{
+    @apply w-[320px] ;
+  }
+}
+@media (width: 360px ) {
+  .slider .slide{
+    @apply w-[285px] ;
+  }
+}
+
+
+/* portofolio slider */
+.slider{
+  @apply flex gap-3 flex-nowrap;
+}
+
+.slider .slide{
+  @apply md:w-[440px];
+}
+
+
+
+.portofolio::after{
+  @apply block absolute w-full h-full top-0;
+  background-image:linear-gradient(to top,#ffbe0ba5,rgba(0, 0, 0, 0.532));
+  z-index : -9999999;
+  content:'';
+}
+
 .btn-shadow {
   box-shadow: 0.3rem 0.3rem #ffbe0b;
   border: 1px solid #ffbe0b;
@@ -68,6 +129,9 @@ nav ul .group:hover::after {
   transform: translate(0.125rem, 0.125rem);
   box-shadow: 0.2rem 0.2rem #ffbe0b;
 }
+
+
+
 
 @layer base {
   html {

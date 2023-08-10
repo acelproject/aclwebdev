@@ -612,6 +612,10 @@ html {
   left: 50%;
 }
 
+.left-\[-0px\] {
+  left: -0px;
+}
+
 .left-\[-15px\] {
   left: -15px;
 }
@@ -622,6 +626,10 @@ html {
 
 .right-4 {
   right: 1rem;
+}
+
+.right-\[0\] {
+  right: 0;
 }
 
 .right-\[0px\] {
@@ -638,6 +646,10 @@ html {
 
 .top-20 {
   top: 5rem;
+}
+
+.top-32 {
+  top: 8rem;
 }
 
 .top-\[-15px\] {
@@ -670,6 +682,14 @@ html {
 
 .z-\[999\] {
   z-index: 999;
+}
+
+.z-\[99\] {
+  z-index: 99;
+}
+
+.-m-5 {
+  margin: -1.25rem;
 }
 
 .m-1 {
@@ -757,6 +777,10 @@ html {
   margin-right: 1rem;
 }
 
+.mr-5 {
+  margin-right: 1.25rem;
+}
+
 .mt-1 {
   margin-top: 0.25rem;
 }
@@ -767,6 +791,10 @@ html {
 
 .mt-12 {
   margin-top: 3rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
 }
 
 .mt-2 {
@@ -825,12 +853,16 @@ html {
   height: 100px;
 }
 
-.h-\[360px\] {
-  height: 360px;
+.h-\[260px\] {
+  height: 260px;
 }
 
 .h-\[400px\] {
   height: 400px;
+}
+
+.h-auto {
+  height: auto;
 }
 
 .h-full {
@@ -853,8 +885,8 @@ html {
   width: 2.25rem;
 }
 
-.w-\[360px\] {
-  width: 360px;
+.w-\[260px\] {
+  width: 260px;
 }
 
 .w-\[400px\] {
@@ -982,8 +1014,8 @@ html {
   overflow: hidden;
 }
 
-.overflow-x-hidden {
-  overflow-x: hidden;
+.overflow-y-scroll {
+  overflow-y: scroll;
 }
 
 .scroll-smooth {
@@ -1064,6 +1096,10 @@ html {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-fixed {
+  background-attachment: fixed;
+}
+
 .fill-current {
   fill: currentColor;
 }
@@ -1074,6 +1110,10 @@ html {
 
 .p-4 {
   padding: 1rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
 }
 
 .px-3 {
@@ -1126,12 +1166,12 @@ html {
   padding-bottom: 1.5rem;
 }
 
-.pb-12 {
-  padding-bottom: 3rem;
+.pb-10 {
+  padding-bottom: 2.5rem;
 }
 
-.pb-16 {
-  padding-bottom: 4rem;
+.pb-12 {
+  padding-bottom: 3rem;
 }
 
 .pb-32 {
@@ -1449,6 +1489,84 @@ nav ul .group:hover::after {
   border: 2px solid #ffbe0b;
 }
 
+.portofolio {
+  position: relative;
+  background-size: cover;
+  background-image:url('/dist/img/porto.jpg');
+  background-repeat:no-repeat;
+  z-index:5;
+  background-position: 0px -130px;
+}
+
+@media (width: 375px) {
+  .portofolio{
+    background-position: 0px -80px;
+    .slider .slide {
+      width: 300px;
+    }
+    @media (min-width: 768px) {
+      .slider .slide {
+        width: 440px;
+      }
+    }
+  }
+}
+
+@media (width: 414px ) {
+  .slider .slide {
+    width: 340px;
+  }
+}
+
+@media (width: 412px ) {
+  .slider .slide {
+    width: 340px;
+  }
+}
+
+@media (width: 390px ) {
+  .slider .slide {
+    width: 315px;
+  }
+}
+
+@media (width: 393px ) {
+  .slider .slide {
+    width: 320px;
+  }
+}
+
+@media (width: 360px ) {
+  .slider .slide {
+    width: 285px;
+  }
+}
+
+/* portofolio slider */
+
+.slider {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .slider .slide {
+    width: 440px;
+  }
+}
+
+.portofolio::after {
+  position: absolute;
+  top: 0px;
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-image:linear-gradient(to top,#ffbe0ba5,rgba(0, 0, 0, 0.532));
+  z-index : -9999999;
+  content:'';
+}
+
 .btn-shadow {
   box-shadow: 0.3rem 0.3rem #ffbe0b;
   border: 1px solid #ffbe0b;
@@ -1600,11 +1718,6 @@ nav ul .group:hover::after {
   background-color: rgb(32 32 32 / var(--tw-bg-opacity));
 }
 
-:is(.dark .dark\:text-slate-200) {
-  --tw-text-opacity: 1;
-  color: rgb(226 232 240 / var(--tw-text-opacity));
-}
-
 :is(.dark .dark\:text-slate-300) {
   --tw-text-opacity: 1;
   color: rgb(203 213 225 / var(--tw-text-opacity));
@@ -1641,6 +1754,18 @@ nav ul .group:hover::after {
 }
 
 @media (min-width: 768px) {
+  .md\:left-\[175px\] {
+    left: 175px;
+  }
+
+  .md\:right-\[175px\] {
+    right: 175px;
+  }
+
+  .md\:top-40 {
+    top: 10rem;
+  }
+
   .md\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
@@ -1655,6 +1780,14 @@ nav ul .group:hover::after {
     margin-top: 0px;
   }
 
+  .md\:h-12 {
+    height: 3rem;
+  }
+
+  .md\:h-\[360px\] {
+    height: 360px;
+  }
+
   .md\:w-1\/2 {
     width: 50%;
   }
@@ -1665,6 +1798,35 @@ nav ul .group:hover::after {
 
   .md\:w-10\/12 {
     width: 83.333333%;
+  }
+
+  .md\:w-12 {
+    width: 3rem;
+  }
+
+  .md\:w-9\/12 {
+    width: 75%;
+  }
+
+  .md\:w-\[360px\] {
+    width: 360px;
+  }
+
+  .md\:px-7 {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+
+  .md\:pb-20 {
+    padding-bottom: 5rem;
+  }
+
+  .md\:pt-28 {
+    padding-top: 7rem;
+  }
+
+  .md\:pt-5 {
+    padding-top: 1.25rem;
   }
 
   .md\:text-left {

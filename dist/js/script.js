@@ -157,3 +157,20 @@ if (
 // }
 
 // console.log(focus());
+
+// Slider card portofolio - swiper js
+// let swiper = new Swiper(".swiper", {
+//   effect: "coverFlow",
+//   grabCursor: true,
+//   centeredSlides: true,
+//   coverflowEffect: {
+//     rotate: 0,
+//     stretch: 0,
+//     depth: 100,
+//     modifier: 3,
+//     slideShadows: true,
+//   },
+//   loop:true,
+// });
+
+
