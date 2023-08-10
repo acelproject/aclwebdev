@@ -69,7 +69,7 @@ nav ul .group:hover::after {
     background-position: 0px -80px;
   }
   .slider .slide {
-    @apply w-[310px] md:w-[440px];
+    @apply w-[330px] md:w-[440px];
   }
 }
 @media (width: 414px) {
