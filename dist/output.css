@@ -628,10 +628,6 @@ html {
   right: 1rem;
 }
 
-.right-\[0\] {
-  right: 0;
-}
-
 .right-\[0px\] {
   right: 0px;
 }
@@ -1505,13 +1501,15 @@ nav ul .group:hover::after {
 @media (width: 375px) {
   .portofolio {
     background-position: 0px -80px;
+  }
+
+  .slider .slide {
+    width: 302px;
+  }
+
+  @media (min-width: 768px) {
     .slider .slide {
-      width: 300px;
-    }
-    @media (min-width: 768px) {
-      .slider .slide {
-        width: 440px;
-      }
+      width: 440px;
     }
   }
 }
