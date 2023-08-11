@@ -69,7 +69,7 @@ nav ul .group:hover::after {
 
 @media (min-width: 375px) {
   .portofolio {
-    background-position: 0px -80px;
+    background-position: 0px -100px;
   }
   .slider .slide {
     @apply w-[100%] md:w-[440px];
