@@ -1504,7 +1504,7 @@ nav ul .group:hover::after {
   }
 }
 
-@media (width: 375px) {
+@media (min-width: 375px) {
   .portofolio {
     background-position: 0px -100px;
   }
