@@ -150,27 +150,47 @@ if (
   inputDarkSmall.checked = false;
 }
 
-// const tes = document.querySelector('.tes');
+//slider in portofolio section
+const carousel = document.querySelector(".slider");
+firstCard = carousel.querySelectorAll(".slider .slide")[0];
+const btnSlide = document.querySelectorAll(".btn-slide");
 
-// const focus = ()=>{
-//   return 'focuuussss';
-// }
+let isDragStart = false,
+  prevPageX,
+  prevScrollLeft;
+let firstCardWidth = firstCard.clientWidth + 25;
 
-// console.log(focus());
+const showHideIcons = ()=> {
+  // btnSlide[0].style.display = carousel.scrollLeft == 0 ? 'none' : 'flex';
+}
 
-// Slider card portofolio - swiper js
-// let swiper = new Swiper(".swiper", {
-//   effect: "coverFlow",
-//   grabCursor: true,
-//   centeredSlides: true,
-//   coverflowEffect: {
-//     rotate: 0,
-//     stretch: 0,
-//     depth: 100,
-//     modifier: 3,
-//     slideShadows: true,
-//   },
-//   loop:true,
-// });
+btnSlide.forEach((icon) => {
+  icon.addEventListener("click", () => {
+    carousel.scrollLeft +=
+      icon.id == "slider-prev" ? -firstCardWidth : firstCardWidth;
+    // showHideIcons();
+  });
+});
 
+const dragStart = (e) => {
+  isDragStart = true;
+  prevPageX = e.pageX;
+  prevScrollLeft = carousel.scrollLeft;
+};
 
+const dragging = (e) => {
+  if (!isDragStart) return;
+  e.preventDefault();
+  carousel.classList.add("dragging");
+  let positionDiff = e.pageX - prevPageX;
+  carousel.scrollLeft = prevScrollLeft - positionDiff;
+};
+
+const dragStop = () => {
+  isDragStart = false;
+  carousel.classList.remove("dragging");
+};
+
+carousel.addEventListener("mousedown", dragStart);
+carousel.addEventListener("mousemove", dragging);
+carousel.addEventListener("mouseup", dragStop);

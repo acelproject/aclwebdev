@@ -893,38 +893,6 @@ html {
   width: 100%;
 }
 
-.w-10\/12 {
-  width: 83.333333%;
-}
-
-.w-8\/12 {
-  width: 66.666667%;
-}
-
-.w-12 {
-  width: 3rem;
-}
-
-.w-14 {
-  width: 3.5rem;
-}
-
-.w-1 {
-  width: 0.25rem;
-}
-
-.w-16 {
-  width: 4rem;
-}
-
-.w-\[\] {
-  width: ;
-}
-
-.w-\[100\%\] {
-  width: 100%;
-}
-
 .max-w-\[250px\] {
   max-width: 250px;
 }
@@ -1124,11 +1092,6 @@ html {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-red-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
-}
-
 .bg-fixed {
   background-attachment: fixed;
 }
@@ -1197,11 +1160,6 @@ html {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
 }
 
 .pb-10 {
@@ -1540,11 +1498,7 @@ nav ul .group:hover::after {
   border-radius: 0.75rem;
 }
 
-@media (min-width: 768px) {
-  .slider .slide {
-    width: 440px;
-  }
-}
+/* portofolio slider */
 
 @media (min-width: 375px) {
   .portofolio {
@@ -1555,12 +1509,6 @@ nav ul .group:hover::after {
     position: relative;
     left: 0.5px;
     width: 322px;
-  }
-
-  @media (min-width: 768px) {
-    .slider .slide {
-      width: 440px;
-    }
   }
 
   .slider-prev {
@@ -1602,17 +1550,41 @@ nav ul .group:hover::after {
   }
 }
 
-/* portofolio slider */
+.slider-prev{
+  /* transition:0.5s;
+  display : none; */
+}
 
 .slider {
   display: flex;
   flex-wrap: nowrap;
-  gap: 0.75rem;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .slider {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.slider {
+  scroll-behavior:smooth;
+}
+
+.slider.dragging{
+  cursor:grab;
+  scroll-behavior:auto;
+}
+
+.slider.dragging .slide{
+  pointer-events:none;
 }
 
 @media (min-width: 768px) {
   .slider .slide {
-    width: 440px;
+    width: 450px;
+    padding: 0.75rem;
   }
 }
 
@@ -1814,12 +1786,12 @@ nav ul .group:hover::after {
 }
 
 @media (min-width: 768px) {
-  .md\:left-\[175px\] {
-    left: 175px;
+  .md\:left-\[120px\] {
+    left: 120px;
   }
 
-  .md\:right-\[175px\] {
-    right: 175px;
+  .md\:right-\[120px\] {
+    right: 120px;
   }
 
   .md\:top-40 {
@@ -1870,11 +1842,6 @@ nav ul .group:hover::after {
 
   .md\:w-\[360px\] {
     width: 360px;
-  }
-
-  .md\:px-7 {
-    padding-left: 1.75rem;
-    padding-right: 1.75rem;
   }
 
   .md\:px-5 {
