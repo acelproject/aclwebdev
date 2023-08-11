@@ -76,7 +76,7 @@ nav ul .group:hover::after {
     background-position: 0px -100px;
   }
   .slider .slide {
-    @apply w-[300px] md:w-[440px] relative left-[0.5px];
+    @apply w-[324px] md:w-[440px] relative left-[0.5px];
   }
   .slider-prev{@apply z-10}
   .slider-next{@apply z-10}
