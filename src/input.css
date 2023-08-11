@@ -63,7 +63,7 @@ nav ul .group:hover::after {
   z-index: 5;
   background-position: 0px -130px;
 }
-.wrap-slide{
+.wrap-slide {
   @apply w-full;
 }
 
@@ -72,7 +72,7 @@ nav ul .group:hover::after {
     background-position: 0px -100px;
   }
   .slider .slide {
-    @apply w-[100%] md:w-[440px];
+    @apply w-[324] md:w-[440px];
   }
 }
 @media (width: 414px) {
