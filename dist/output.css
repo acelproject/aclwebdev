@@ -1006,10 +1006,6 @@ html {
   align-self: center;
 }
 
-.overflow-auto {
-  overflow: auto;
-}
-
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1498,19 +1494,39 @@ nav ul .group:hover::after {
   background-position: 0px -130px;
 }
 
-@media (min-width: 375px) {
+.wrap-slide {
+  border-radius: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .slider .slide {
+    width: 440px;
+  }
+}
+
+@media (width: 375px) {
   .portofolio {
-    background-position: 0px -80px;
+    background-position: 0px -100px;
   }
 
   .slider .slide {
-    width: 328px;
+    position: relative;
+    left: 0.5px;
+    width: 300px;
   }
 
   @media (min-width: 768px) {
     .slider .slide {
       width: 440px;
     }
+  }
+
+  .slider-prev {
+    z-index: 10;
+  }
+
+  .slider-next {
+    z-index: 10;
   }
 }
 
