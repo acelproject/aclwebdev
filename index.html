@@ -25,8 +25,17 @@
     </script>
   </head>
   <body class=" transition dark:bg-mydark">
+    <!-- Loader animastion -->
+    <div class="load-wrapper fixed z-[9999] bg-[#000000a1] flex flex-wrap flex-col justify-center items-center h-[100vh] w-full overflow-hidden">
+      <div class="loader m-[20px] inline-block relative h-[75px] w-[75px] mb-[50px] z-[99999]">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <!-- end Loader animastion -->
     <!-- Back to top -->
-
     <a
       href="#"
       class="scrollup z-[99] fixed bottom-0 right-0 m-5 scale-0 rounded-full bg-primary px-3 py-2 text-2xl shadow-md transition"
@@ -488,6 +497,7 @@
             </p>
 
             <button
+            onclick="refreshPage()"
               id="btn-cv"
               class="btn-shadow mt-5 px-5 py-2 text-base font-semibold text-primary transition duration-300 ease-in-out"
             >
@@ -1114,7 +1124,7 @@
                   >Portfolio</a
                 >
               </li>
-              <li>
+              <!-- <li>
                 <a
                   href="#clients"
                   class="mb-2 inline-block text-base text-slate-200 hover:text-primary"
@@ -1127,7 +1137,7 @@
                   class="mb-2 inline-block text-base text-slate-200 hover:text-primary"
                   >Blog</a
                 >
-              </li>
+              </li> -->
               <li>
                 <a
                   href="#contact"

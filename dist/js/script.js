@@ -1,3 +1,24 @@
+// LOADING PAGE
+const refreshPage = () => {
+  location.reload();
+};
+const playLoader = () => {
+  let loader = document.querySelector(".load-wrapper");
+  let bodyLoad = document.querySelector("body");
+  loader.style.display = "none";
+  bodyLoad.classList.remove("overflow-hidden");
+};
+const stopLoader = () => {
+  let loader = document.querySelector(".load-wrapper");
+  loader.style.display = "none";
+};
+
+window.addEventListener("load", () => {
+  let bodyLoad = document.querySelector("body");
+  bodyLoad.classList.add("overflow-hidden");
+  setTimeout(playLoader, 2000);
+});
+
 // Hamburger
 
 const hamburger = document.querySelector("#hamburger");
@@ -160,9 +181,9 @@ let isDragStart = false,
   prevScrollLeft;
 let firstCardWidth = firstCard.clientWidth + 25;
 
-const showHideIcons = ()=> {
+const showHideIcons = () => {
   // btnSlide[0].style.display = carousel.scrollLeft == 0 ? 'none' : 'flex';
-}
+};
 
 btnSlide.forEach((icon) => {
   icon.addEventListener("click", () => {

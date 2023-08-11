@@ -676,12 +676,28 @@ html {
   z-index: 105;
 }
 
+.z-\[9999999\] {
+  z-index: 9999999;
+}
+
 .z-\[999\] {
   z-index: 999;
 }
 
 .z-\[99\] {
   z-index: 99;
+}
+
+.z-\[9999\] {
+  z-index: 9999;
+}
+
+.z-\[\] {
+  z-index: ;
+}
+
+.z-\[99999\] {
+  z-index: 99999;
 }
 
 .-m-5 {
@@ -694,6 +710,10 @@ html {
 
 .m-5 {
   margin: 1.25rem;
+}
+
+.m-\[20px\] {
+  margin: 20px;
 }
 
 .m-auto {
@@ -759,6 +779,10 @@ html {
 
 .mb-8 {
   margin-bottom: 2rem;
+}
+
+.mb-\[50px\] {
+  margin-bottom: 50px;
 }
 
 .ml-8 {
@@ -849,12 +873,20 @@ html {
   height: 100px;
 }
 
+.h-\[100vh\] {
+  height: 100vh;
+}
+
 .h-\[260px\] {
   height: 260px;
 }
 
 .h-\[400px\] {
   height: 400px;
+}
+
+.h-\[75px\] {
+  height: 75px;
 }
 
 .h-auto {
@@ -887,6 +919,10 @@ html {
 
 .w-\[400px\] {
   width: 400px;
+}
+
+.w-\[75px\] {
+  width: 75px;
 }
 
 .w-full {
@@ -1062,6 +1098,11 @@ html {
   background-color: #000000ce;
 }
 
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
 .bg-mydark {
   --tw-bg-opacity: 1;
   background-color: rgb(32 32 32 / var(--tw-bg-opacity));
@@ -1090,6 +1131,14 @@ html {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\] {
+  background-color: ;
+}
+
+.bg-\[\#000000a1\] {
+  background-color: #000000a1;
 }
 
 .bg-fixed {
@@ -1323,6 +1372,10 @@ html {
 
 .opacity-60 {
   opacity: 0.6;
+}
+
+.opacity-70 {
+  opacity: 0.7;
 }
 
 .shadow-lg {
@@ -1612,6 +1665,45 @@ nav ul .group:hover::after {
 .btn-shadow:active {
   transform: translate(0.125rem, 0.125rem);
   box-shadow: 0.2rem 0.2rem #ffbe0b;
+}
+
+/* Animasi loading */
+
+.loader div{
+  display: block;
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  border: 6px solid ;
+  border-radius: 50%;
+  animation: spin 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color:#ffbe0b transparent transparent transparent ;
+}
+
+@keyframes spin {
+  0%{
+    transform: rotate(0deg);
+  }
+
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.loader div:nth-child(1){
+  animation-delay: -0.45s;
+}
+
+.loader div:nth-child(2){
+  animation-delay: -0.3s;
+}
+
+.loader div:nth-child(3){
+  animation-delay: -0.45s;
+}
+
+.loader div:nth-child(4){
+  animation-delay: -0.15s;
 }
 
 .after\:ml-1::after {

@@ -149,6 +149,49 @@ nav ul .group:hover::after {
   box-shadow: 0.2rem 0.2rem #ffbe0b;
 }
 
+
+
+
+
+/* Animasi loading */
+.loader div{
+  display: block;
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  border: 6px solid ;
+  border-radius: 50%;
+  animation: spin 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color:#ffbe0b transparent transparent transparent ;
+}
+
+@keyframes spin {
+  0%{
+      transform: rotate(0deg);
+  }
+  100%{
+      transform: rotate(360deg);
+  }
+}
+
+.loader div:nth-child(1){
+  animation-delay: -0.45s;
+}
+.loader div:nth-child(2){
+  animation-delay: -0.3s;
+}
+.loader div:nth-child(3){
+  animation-delay: -0.45s;
+}
+.loader div:nth-child(4){
+  animation-delay: -0.15s;
+}
+
+
+
+
+
+
 @layer base {
   html {
     scroll-behavior: smooth;
