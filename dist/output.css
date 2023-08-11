@@ -1512,7 +1512,7 @@ nav ul .group:hover::after {
   .slider .slide {
     position: relative;
     left: 0.5px;
-    width: 324px;
+    width: 322px;
   }
 
   @media (min-width: 768px) {
