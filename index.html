@@ -11,6 +11,12 @@
       href="https://fonts.googleapis.com/css2?family=Viga&display=swap"
       rel="stylesheet"
     />
+    <!-- swiper js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <!-- swiper js -->
     <!-- // On page load or when changing themes, best to add inline in `head` to avoid FOUC -->
     <script>
       if (
@@ -24,10 +30,14 @@
       }
     </script>
   </head>
-  <body class=" transition dark:bg-mydark">
+  <body class="transition dark:bg-mydark">
     <!-- Loader animastion -->
-    <div class="load-wrapper fixed z-[9999] bg-[#000000a1] flex flex-wrap flex-col justify-center items-center h-[100vh] w-full overflow-hidden">
-      <div class="loader m-[20px] inline-block relative h-[75px] w-[75px] mb-[50px] z-[99999]">
+    <div
+      class="load-wrapper fixed z-[9999] flex h-[100vh] w-full flex-col flex-wrap items-center justify-center overflow-hidden bg-[#000000a1]"
+    >
+      <div
+        class="loader relative z-[99999] m-[20px] mb-[50px] inline-block h-[75px] w-[75px]"
+      >
         <div></div>
         <div></div>
         <div></div>
@@ -38,7 +48,7 @@
     <!-- Back to top -->
     <a
       href="#"
-      class="scrollup z-[99] fixed bottom-0 right-0 m-5 scale-0 rounded-full bg-primary px-3 py-2 text-2xl shadow-md transition"
+      class="scrollup fixed bottom-0 right-0 z-[99] m-5 scale-0 rounded-full bg-primary px-3 py-2 text-2xl shadow-md transition"
       ><div class="text-white hover:animate-scrollup">
         <i class="fas fa-rocket translate-y-[2px] -rotate-45"></i></div
     ></a>
@@ -113,42 +123,42 @@
           <div class="flex items-center px-4">
             <div class="relative flex items-center gap-5">
               <!-- Darkmode -->
-            <div
-            id="dark-mode-small"
-            class="relative ml-8 flex h-7 w-7 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-slate-100 p-2 lg:invisible"
-          >
-            <input
-              type="checkbox"
-              id="input-dark-small"
-              class="absolute left-1 top-1 z-10 h-5 w-5 cursor-pointer opacity-0"
-            />
-            <div
-              id="dark-icon"
-              class="absolute flex translate-y-[14px] flex-col transition ease-linear"
-            >
-              <span class="light text-lg text-primary">
-                <i class="fas fa-sun"></i>
-              </span>
-              <span class="light text-lg text-primary"
-                ><i class="fas fa-moon"></i>
-              </span>
-            </div>
-          </div>
-          <!-- End Darkmode -->
-          <button
-            id="hamburger"
-            name="hamburger"
-            type="button"
-            class=" right-4 block lg:hidden"
-          >
-            <span
-              class="hamburger-line origin-top-left transition ease-in-out"
-            ></span>
-            <span class="hamburger-line transition ease-in-out"></span>
-            <span
-              class="hamburger-line origin-bottom-left transition ease-in-out"
-            ></span>
-          </button>
+              <div
+                id="dark-mode-small"
+                class="relative ml-8 flex h-7 w-7 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-slate-100 p-2 lg:invisible"
+              >
+                <input
+                  type="checkbox"
+                  id="input-dark-small"
+                  class="absolute left-1 top-1 z-10 h-5 w-5 cursor-pointer opacity-0"
+                />
+                <div
+                  id="dark-icon"
+                  class="absolute flex translate-y-[14px] flex-col transition ease-linear"
+                >
+                  <span class="light text-lg text-primary">
+                    <i class="fas fa-sun"></i>
+                  </span>
+                  <span class="light text-lg text-primary"
+                    ><i class="fas fa-moon"></i>
+                  </span>
+                </div>
+              </div>
+              <!-- End Darkmode -->
+              <button
+                id="hamburger"
+                name="hamburger"
+                type="button"
+                class="right-4 block lg:hidden"
+              >
+                <span
+                  class="hamburger-line origin-top-left transition ease-in-out"
+                ></span>
+                <span class="hamburger-line transition ease-in-out"></span>
+                <span
+                  class="hamburger-line origin-bottom-left transition ease-in-out"
+                ></span>
+              </button>
             </div>
             <nav
               id="nav-menu"
@@ -398,7 +408,7 @@
             >
           </div>
           <div
-            class="hero-image relative mx-auto md:mt-0 mt-16 h-[260px] w-[260px]  md:h-[360px] md:w-[360px] overflow-hidden md:mx-0 lg:right-[-130px] lg:top-6"
+            class="hero-image relative mx-auto mt-16 h-[260px] w-[260px] overflow-hidden md:mx-0 md:mt-0 md:h-[360px] md:w-[360px] lg:right-[-130px] lg:top-6"
           >
             <img
               src="dist/img/acel.png"
@@ -497,7 +507,7 @@
             </p>
 
             <button
-            onclick="refreshPage()"
+              onclick="refreshPage()"
               id="btn-cv"
               class="btn-shadow mt-5 px-5 py-2 text-base font-semibold text-primary transition duration-300 ease-in-out"
             >
@@ -641,7 +651,10 @@
     <!-- About end-->
 
     <!-- Portofolio -->
-    <section id="portfolio" class="portofolio h-auto pt-10 md:pt-28 pb-10 bg-slate-100 bg-fixed overflow-y-scroll  dark:bg-[#343a40]">
+    <section
+      id="portfolio"
+      class="portofolio h-auto overflow-y-scroll bg-slate-100 bg-fixed pt-10 dark:bg-[#343a40] md:pb-20 md:pt-20 py-24"
+    >
       <div class="w-full px-4">
         <div class="container">
           <div class="mx-auto mb-16 max-w-xl text-center">
@@ -658,173 +671,188 @@
             </p> -->
           </div>
         </div>
-        <div
-          class="justify-center xl:mx-auto mx-auto  -m-5"
-        >
-          <!-- <div class="mb-12 p-4 md:w-1/2">
-            <div class="overflow-hidden rounded-md shadow-md">
-              <img
-                src="dist/img/p-1.png"
-                alt="Agape youth bazar"
-                class="w-full"
-              />
-            </div>
-            <h3 class="mb-3 mt-5 font-semibold text-mydark dark:text-white">
-              Landing Page Youth Agape Bazar
-            </h3>
-            <p class="text-base text-slate-600 dark:text-slate-300">
-              Website Landing Page untuk penjualan bazar pemuda di organisasi
-              Youth GPDI Agape Matako.
-            </p>
-          </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="overflow-hidden rounded-md shadow-md">
-              <img src="dist/img/p-3.png" alt="stmik agency" class="w-full" />
-            </div>
-            <h3 class="mb-3 mt-5 font-semibold text-mydark dark:text-white">
-              Website adhiguna agency
-            </h3>
-            <p class="text-base text-slate-600 dark:text-slate-300">
-              Website dengan sistem <i>member get member</i> untuk agent yang
-              bergabung dengan STMIK Adhi guna Palu dalam upaya mendapatkan
-              calon mahasiswa baru.
-            </p>
-          </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="overflow-hidden rounded-md shadow-md">
-              <img src="dist/img/p-4.png" alt="Movie search" class="w-full" />
-            </div>
-            <h3 class="mb-3 mt-5 font-semibold text-mydark dark:text-white">
-              Movie Search
-            </h3>
-            <p class="text-base text-slate-600 dark:text-slate-300">
-              Website Pencarian film sederhana untuk menemukan film kesukaanmu.
-            </p>
-          </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="overflow-hidden rounded-md shadow-md">
-              <img
-                src="dist/img/p-2.png"
-                alt="Kalkulator onloine"
-                class="w-full"
-              />
-            </div>
-            <h3 class="mb-3 mt-5 font-semibold text-mydark dark:text-white">
-              Calculator Online
-            </h3>
-            <p class="text-base text-slate-600 dark:text-slate-300">
-              Website kalkulator sederahana.
-            </p>
-          </div> -->
-          <div class=" wrapper-slider  mx-auto md:px-5 px-4 relative ">
+        <div class="-m-5 mx-auto justify-center xl:mx-auto">
+
+          <!-- swiper js -->
+          <!-- Slider main container -->
+          <div class="swiper h-auto md:w-9/12">
             <!-- Additional required wrapper -->
-            <div id="slider-prev" class="btn-slide text-primary cursor-pointer slider-prev absolute h-10 md:h-12 w-10 md:w-12 rounded-full left-[-0px] md:left-[120px] md:top-40 top-32 bg-primary flex justify-center items-center">
-              <svg  xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
-            </div>
-            <div id="slider-next" class="btn-slide text-primary cursor-pointer slider-next absolute h-10 md:h-12 w-10 md:w-12 rounded-full right-0 md:right-[120px] md:top-40 top-32 bg-primary flex justify-center items-center">
-              <svg  xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>
-            </div>
-            <div class=" mx-auto md:w-9/12 slider md:pt-5 md:pb-20 overflow-hidden">
+            <div class="swiper-wrapper w-full flex flex-nowrap">
               <!-- Slides -->
-              <div class="wrap-slide flex flex-col  rounded-xl">
-                <div class="slide mb- rounded-xl bg-white  dark:bg-[#343a40] ">
-                  <div class="overflow-hidden rounded-xl shadow-md">
-                    <img
-                      src="dist/img/p-1.png"
-                      alt="Agape youth bazar"
-                      class="w-full"
-                    />
-                  </div>
-                  <div class="p-5">
-                    <h3 class="mb-3 font-semibold text-primary">
+              <!-- <div class="swiper-slide">
+                <div class="flex w-full md:flex-wrap bg-green-500">
+                  <div class="md:w-1/2 w-full">
+                    <div class="overflow-hidden rounded-md shadow-md">
+                      <img
+                        src="dist/img/p-1.png"
+                        alt="Agape youth bazar"
+                        class="w-full"
+                      />
+                    </div>
+                    <h3
+                      class="mb-3 mt-5 font-semibold text-mydark dark:text-white"
+                    >
                       Landing Page Youth Agape Bazar
                     </h3>
-                    <p class="text-base text-mydark dark:text-white">
-                      Website Landing Page untuk penjualan bazar pemuda di organisasi
-                      Youth GPDI Agape Matako.
+                    <p class="text-base text-slate-600 dark:text-slate-300">
+                      Website Landing Page untuk penjualan bazar pemuda di
+                      organisasi Youth GPDI Agape Matako.
                     </p>
                   </div>
-                </div>
-              </div>
-              <div class=" flex flex-col  rounded-xl">
-                <div class="slide mb- rounded-xl mr-5 bg-white  dark:bg-[#343a40] ">
-                  <div class="overflow-hidden rounded-xl shadow-md">
-                    <img
-                      src="dist/img/p-3.png"
-                      alt="Agape youth bazar"
-                      class="w-full"
-                    />
-                  </div>
-                  <div class="p-5">
-                    <h3 class="mb-3 font-semibold text-primary">
+                  <div class="md:w-1/2 w-full">
+                    <div class="overflow-hidden rounded-md shadow-md">
+                      <img
+                        src="dist/img/p-3.png"
+                        alt="stmik agency"
+                        class="w-full"
+                      />
+                    </div>
+                    <h3
+                      class="mb-3 mt-5 font-semibold text-mydark dark:text-white"
+                    >
                       Website adhiguna agency
                     </h3>
-                    <p class="text-base text-mydark dark:text-white">
-                      Website dengan sistem <i>member get member</i> untuk agent yang
-                      bergabung dengan STMIK Adhi guna Palu dalam upaya mendapatkan
-                      calon mahasiswa baru.
+                    <p class="text-base text-slate-600 dark:text-slate-300">
+                      Website dengan sistem <i>member get member</i> untuk agent
+                      yang bergabung dengan STMIK Adhi guna Palu dalam upaya
+                      mendapatkan calon mahasiswa baru.
                     </p>
                   </div>
                 </div>
               </div>
-              <div class=" flex flex-col  rounded-xl">
-                <div class="slide mb- rounded-xl bg-white  dark:bg-[#343a40] ">
-                  <div class="overflow-hidden rounded-xl shadow-md">
-                    <img
-                      src="dist/img/p-4.png"
-                      alt="Agape youth bazar"
-                      class="w-full"
-                    />
-                  </div>
-                  <div class="p-5">
-                    <h3 class="mb-3 font-semibold text-primary">
+              <div class="swiper-slide">
+                <div class="flex w-full flex-wrap bg-green-500">
+                  <div class="md:w-1/2 w-full">
+                    <div class="overflow-hidden rounded-md shadow-md">
+                      <img
+                        src="dist/img/p-4.png"
+                        alt="Movie search"
+                        class="w-full"
+                      />
+                    </div>
+                    <h3
+                      class="mb-3 mt-5 font-semibold text-mydark dark:text-white"
+                    >
                       Movie Search
                     </h3>
-                    <p class="text-base text-mydark dark:text-white">
-                      Website Pencarian film sederhana untuk menemukan film kesukaanmu.
+                    <p class="text-base text-slate-600 dark:text-slate-300">
+                      Website Pencarian film sederhana untuk menemukan film
+                      kesukaanmu.
                     </p>
                   </div>
-                </div>
-              </div>
-              <div class=" flex flex-col  rounded-xl">
-                <div class="slide mb- rounded-xl bg-white  dark:bg-[#343a40] ">
-                  <div class="overflow-hidden rounded-xl shadow-md">
-                    <img
-                      src="dist/img/p-2.png"
-                      alt="Agape youth bazar"
-                      class="w-full"
-                    />
-                  </div>
-                  <div class="p-5">
-                    <h3 class="mb-3 font-semibold text-primary">
+                  <div class="md:w-1/2 w-full">
+                    <div class="overflow-hidden rounded-md shadow-md">
+                      <img
+                        src="dist/img/p-2.png"
+                        alt="Kalkulator onloine"
+                        class="w-full"
+                      />
+                    </div>
+                    <h3
+                      class="mb-3 mt-5 font-semibold text-mydark dark:text-white"
+                    >
                       Calculator Online
                     </h3>
-                    <p class="text-base text-mydark dark:text-white">
+                    <p class="text-base text-slate-600 dark:text-slate-300">
                       Website kalkulator sederahana.
                     </p>
                   </div>
                 </div>
-              </div>
-              <div class=" flex flex-col  rounded-xl">
-                <div class="slide mb- rounded-xl bg-white  dark:bg-[#343a40] ">
-                  <div class="overflow-hidden rounded-xl shadow-md">
-                    <img
-                      src="dist/img/p-2.png"
-                      alt="Agape youth bazar"
-                      class="w-full"
-                    />
+              </div> -->
+
+                <div class="swiper-slide">
+                  <div class="w-full bg-white dark:bg-[#343a40] rounded-md p-3">
+                    <div class="overflow-hidden rounded-md shadow-md">
+                      <img
+                        src="dist/img/p-1.png"
+                        alt="Agape youth bazar"
+                        class="w-full"
+                      />
+                    </div>
+                    <h3
+                      class="mb-3 mt-5 font-semibold text-mydark dark:text-white"
+                    >
+                      Landing Page Youth Agape Bazar
+                    </h3>
+                    <p class="text-base text-slate-600 dark:text-slate-300">
+                      Website Landing Page untuk penjualan bazar pemuda di
+                      organisasi Youth GPDI Agape Matako.
+                    </p>
                   </div>
-                  <div class="p-5">
-                    <h3 class="mb-3 font-semibold text-primary">
+                </div>
+                <div class="swiper-slide">
+                  <div class="w-full bg-white dark:bg-[#343a40] rounded-md p-3">
+                    <div class="overflow-hidden rounded-md shadow-md">
+                      <img
+                        src="dist/img/p-3.png"
+                        alt="stmik agency"
+                        class="w-full"
+                      />
+                    </div>
+                    <h3
+                      class="mb-3 mt-5 font-semibold text-mydark dark:text-white"
+                    >
+                      Website adhiguna agency
+                    </h3>
+                    <p class="text-base text-slate-600 dark:text-slate-300">
+                      Website dengan sistem <i>member get member</i> untuk agent
+                      yang bergabung dengan STMIK Adhi guna Palu dalam upaya
+                      mendapatkan calon mahasiswa baru.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="w-full bg-white dark:bg-[#343a40] rounded-md p-3">
+                    <div class="overflow-hidden rounded-md shadow-md">
+                      <img
+                        src="dist/img/p-4.png"
+                        alt="Movie search"
+                        class="w-full"
+                      />
+                    </div>
+                    <h3
+                      class="mb-3 mt-5 font-semibold text-mydark dark:text-white"
+                    >
+                      Movie Search
+                    </h3>
+                    <p class="text-base text-slate-600 dark:text-slate-300">
+                      Website Pencarian film sederhana untuk menemukan film
+                      kesukaanmu.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="w-full bg-white dark:bg-[#343a40] rounded-md p-3">
+                    <div class="overflow-hidden rounded-md shadow-md">
+                      <img
+                        src="dist/img/p-2.png"
+                        alt="Kalkulator onloine"
+                        class="w-full"
+                      />
+                    </div>
+                    <h3
+                      class="mb-3 mt-5 font-semibold text-mydark dark:text-white"
+                    >
                       Calculator Online
                     </h3>
-                    <p class="text-base text-mydark dark:text-white">
+                    <p class="text-base text-slate-600 dark:text-slate-300">
                       Website kalkulator sederahana.
                     </p>
                   </div>
                 </div>
-              </div>
-            
+
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+          <!--end swiper js -->
         </div>
       </div>
     </section>
@@ -1261,6 +1289,7 @@
     </section>
     <!-- Footer end-->
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script
       src="https://kit.fontawesome.com/71bba478e7.js"
       crossorigin="anonymous"

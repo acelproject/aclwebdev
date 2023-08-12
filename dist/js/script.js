@@ -16,7 +16,7 @@ const stopLoader = () => {
 window.addEventListener("load", () => {
   let bodyLoad = document.querySelector("body");
   bodyLoad.classList.add("overflow-hidden");
-  setTimeout(playLoader, 2000);
+  setTimeout(playLoader, 1000);
 });
 
 // Hamburger
@@ -172,46 +172,14 @@ if (
 }
 
 //slider in portofolio section
-const carousel = document.querySelector(".slider");
-firstCard = carousel.querySelectorAll(".slider .slide")[0];
-const btnSlide = document.querySelectorAll(".btn-slide");
 
-let isDragStart = false,
-  prevPageX,
-  prevScrollLeft;
-let firstCardWidth = firstCard.clientWidth + 25;
-
-const showHideIcons = () => {
-  // btnSlide[0].style.display = carousel.scrollLeft == 0 ? 'none' : 'flex';
-};
-
-btnSlide.forEach((icon) => {
-  icon.addEventListener("click", () => {
-    carousel.scrollLeft +=
-      icon.id == "slider-prev" ? -firstCardWidth : firstCardWidth;
-    // showHideIcons();
-  });
+const swiper = new Swiper('.swiper', {
+  speed:400,
+  spaceBetween:10,
+  slidesPerView:2,
+  pagination:{
+    el:'.swiper-pagination',
+    type:'bullets',
+    clickable:true,
+  }
 });
-
-const dragStart = (e) => {
-  isDragStart = true;
-  prevPageX = e.pageX;
-  prevScrollLeft = carousel.scrollLeft;
-};
-
-const dragging = (e) => {
-  if (!isDragStart) return;
-  e.preventDefault();
-  carousel.classList.add("dragging");
-  let positionDiff = e.pageX - prevPageX;
-  carousel.scrollLeft = prevScrollLeft - positionDiff;
-};
-
-const dragStop = () => {
-  isDragStart = false;
-  carousel.classList.remove("dragging");
-};
-
-carousel.addEventListener("mousedown", dragStart);
-carousel.addEventListener("mousemove", dragging);
-carousel.addEventListener("mouseup", dragStop);

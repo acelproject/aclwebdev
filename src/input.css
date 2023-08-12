@@ -57,84 +57,24 @@ nav ul .group:hover::after {
 }
 
 .portofolio {
-  @apply relative bg-cover;
+  @apply relative bg-cover w-full h-full;
   background-image: url("/dist/img/porto.jpg");
   background-repeat: no-repeat;
   z-index: 5;
-  background-position: 0px -130px;
+  background-position: 0px -140px;
 }
-.wrap-slide {
-  @apply rounded-xl;
-}
+
 
 
 /* portofolio slider */
-
-@media (min-width: 375px) {
-  .portofolio {
-    background-position: 0px -100px;
-  }
-  .slider .slide {
-    @apply w-[322px] relative left-[0.5px];
-  }
-  .slider-prev{@apply z-10}
-  .slider-next{@apply z-10}
-}
-@media (width: 414px) {
-  .slider .slide {
-    @apply w-[340px];
-  }
-}
-@media (width: 412px) {
-  .slider .slide {
-    @apply w-[340px];
-  }
-}
-@media (width: 390px) {
-  .slider .slide {
-    @apply w-[315px];
-  }
-}
-@media (width: 393px) {
-  .slider .slide {
-    @apply w-[320px];
-  }
-}
-@media (width: 360px) {
-  .slider .slide {
-    @apply w-[285px];
-  }
-}
-
-.slider-prev{
-  /* transition:0.5s;
-  display : none; */
-}
-
-.slider {
-  @apply flex flex-nowrap gap-4 md:px-4;
-  scroll-behavior:smooth;
-}
-
-.slider.dragging{
-  cursor:grab;
-  scroll-behavior:auto;
-}
-
-.slider.dragging .slide{
-  pointer-events:none;
-}
-
-.slider .slide {
-  @apply md:w-[450px] md:p-3;
-}
-
 .portofolio::after {
   @apply absolute top-0 block h-full w-full;
   background-image: linear-gradient(to top, #ffbe0ba5, rgba(0, 0, 0, 0.532));
   z-index: -9999999;
   content: "";
 }
+
+/*end portofolio slider */
 
 .btn-shadow {
   box-shadow: 0.3rem 0.3rem #ffbe0b;
