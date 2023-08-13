@@ -653,7 +653,7 @@
     <!-- Portofolio -->
     <section
       id="portfolio"
-      class="portofolio h-auto overflow-y-scroll bg-slate-100 bg-fixed pt-10 dark:bg-[#343a40] md:pb-20 md:pt-20 py-24"
+      class="portofolio h-auto bg-slate-100 bg-fixed pt-10 dark:bg-[#343a40] md:pb-20 md:pt-20 py-24"
     >
       <div class="w-full px-4">
         <div class="container">
@@ -673,15 +673,16 @@
         </div>
         <div class="-m-5 mx-auto justify-center xl:mx-auto">
 
-          <!-- swiper js -->
+          <div class="slider-large-device hidden md:flex">
+            <!-- swiper js -->
           <!-- Slider main container -->
-          <div class="swiper h-auto md:w-9/12">
+          <div class="swiper slider-large-device h-auto md:w-9/12">
             <!-- Additional required wrapper -->
-            <div class="swiper-wrapper w-full flex flex-nowrap">
-              <!-- Slides -->
-              <!-- <div class="swiper-slide">
-                <div class="flex w-full md:flex-wrap bg-green-500">
-                  <div class="md:w-1/2 w-full">
+            <div class="swiper-wrapper w-full flex flex-nowrap pb-10">
+              <!-- Slides --> 
+                <!-- large divace -->
+                <div class="swiper-slide">
+                  <div class="w-full bg-white dark:bg-[#343a40] rounded-sm card p-3">
                     <div class="overflow-hidden rounded-md shadow-md">
                       <img
                         src="dist/img/p-1.png"
@@ -699,7 +700,9 @@
                       organisasi Youth GPDI Agape Matako.
                     </p>
                   </div>
-                  <div class="md:w-1/2 w-full">
+                </div>
+                <div class="swiper-slide">
+                  <div class="w-full bg-white dark:bg-[#343a40] rounded-sm card p-3">
                     <div class="overflow-hidden rounded-md shadow-md">
                       <img
                         src="dist/img/p-3.png"
@@ -719,10 +722,8 @@
                     </p>
                   </div>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="flex w-full flex-wrap bg-green-500">
-                  <div class="md:w-1/2 w-full">
+                <div class="swiper-slide">
+                  <div class="w-full bg-white dark:bg-[#343a40] rounded-sm card p-3">
                     <div class="overflow-hidden rounded-md shadow-md">
                       <img
                         src="dist/img/p-4.png"
@@ -740,7 +741,9 @@
                       kesukaanmu.
                     </p>
                   </div>
-                  <div class="md:w-1/2 w-full">
+                </div>
+                <div class="swiper-slide">
+                  <div class="w-full bg-white dark:bg-[#343a40] rounded-sm card p-3">
                     <div class="overflow-hidden rounded-md shadow-md">
                       <img
                         src="dist/img/p-2.png"
@@ -758,10 +761,31 @@
                     </p>
                   </div>
                 </div>
-              </div> -->
+                
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
 
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+          <!--end swiper js -->
+          </div>
+
+          <div class="slider-phone-device md:hidden">
+            <!-- swiper js -->
+          <!-- Slider main container -->
+          <div class="swiper slider-phone-device h-auto md:w-9/12">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper w-full flex flex-nowrap pb-10">
+              <!-- Slides --> 
+                <!-- large divace -->
                 <div class="swiper-slide">
-                  <div class="w-full bg-white dark:bg-[#343a40] rounded-md p-3">
+                  <div class="w-full bg-white dark:bg-[#343a40] rounded-sm card p-3">
                     <div class="overflow-hidden rounded-md shadow-md">
                       <img
                         src="dist/img/p-1.png"
@@ -781,7 +805,7 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="w-full bg-white dark:bg-[#343a40] rounded-md p-3">
+                  <div class="w-full bg-white dark:bg-[#343a40] rounded-sm card p-3">
                     <div class="overflow-hidden rounded-md shadow-md">
                       <img
                         src="dist/img/p-3.png"
@@ -802,7 +826,7 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="w-full bg-white dark:bg-[#343a40] rounded-md p-3">
+                  <div class="w-full bg-white dark:bg-[#343a40] rounded-sm card p-3">
                     <div class="overflow-hidden rounded-md shadow-md">
                       <img
                         src="dist/img/p-4.png"
@@ -822,7 +846,7 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="w-full bg-white dark:bg-[#343a40] rounded-md p-3">
+                  <div class="w-full bg-white dark:bg-[#343a40] rounded-sm card p-3">
                     <div class="overflow-hidden rounded-md shadow-md">
                       <img
                         src="dist/img/p-2.png"
@@ -853,6 +877,9 @@
             <div class="swiper-scrollbar"></div>
           </div>
           <!--end swiper js -->
+          </div>
+          
+          
         </div>
       </div>
     </section>
@@ -1094,7 +1121,7 @@
       <div class="container">
         <div class="mx-auto flex flex-wrap justify-center md:w-10/12">
           <div class="mb-12 w-full px-4 text-slate-200 md:w-1/3">
-            <h2 class="mb-5 text-4xl font-bold text-white">Aclwebdev</h2>
+            <h2 class="mb-5 text-4xl font-bold text-primary">Aclwebdev</h2>
             <h3 class="mb-2 text-2xl font-bold">Hubungi Kami</h3>
             <p>aclprcjt@gmail.com</p>
             <p>Jl. Trans Sulawesi, Desa Matako</p>
@@ -1183,7 +1210,7 @@
             <a
               href="https://youtube.com/@acelwebdev"
               target="_blank"
-              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-400 text-slate-500 transition ease-in-out hover:border-primary hover:bg-primary hover:text-white"
+              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-400 text-primary transition ease-in-out hover:border-primary hover:bg-primary hover:text-white"
             >
               <svg
                 class="fill-current"
@@ -1202,7 +1229,7 @@
             <a
               href="https://instagram.com/aclwebdev"
               target="_blank"
-              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-400 text-slate-500 transition ease-in-out hover:border-primary hover:bg-primary hover:text-white"
+              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-400 text-primary transition ease-in-out hover:border-primary hover:bg-primary hover:text-white"
             >
               <svg
                 class="fill-current"
@@ -1221,7 +1248,7 @@
             <a
               href="https://www.tiktok.com/@aclwebdev?_t=8eMKjiuFdJ4&_r=1"
               target="_blank"
-              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-400 text-slate-500 transition ease-in-out hover:border-primary hover:bg-primary hover:text-white"
+              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-400 text-primary transition ease-in-out hover:border-primary hover:bg-primary hover:text-white"
             >
               <svg
                 class="fill-current"
@@ -1240,7 +1267,7 @@
             <a
               href="#"
               target="_blank"
-              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-400 text-slate-500 transition ease-in-out hover:border-primary hover:bg-primary hover:text-white"
+              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-400 text-primary transition ease-in-out hover:border-primary hover:bg-primary hover:text-white"
             >
               <svg
                 class="fill-current"
@@ -1259,7 +1286,7 @@
             <a
               href="https://github.com/acelproject"
               target="_blank"
-              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-400 text-slate-500 transition ease-in-out hover:border-primary hover:bg-primary hover:text-white"
+              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-400 text-primary transition ease-in-out hover:border-primary hover:bg-primary hover:text-white"
             >
               <svg
                 class="fill-current"

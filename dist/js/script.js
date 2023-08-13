@@ -173,10 +173,20 @@ if (
 
 //slider in portofolio section
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.swiper.slider-large-device', {
   speed:400,
   spaceBetween:10,
   slidesPerView:2,
+  pagination:{
+    el:'.swiper-pagination',
+    type:'bullets',
+    clickable:true,
+  }
+});
+const swiperPhone = new Swiper('.swiper.slider-phone-device', {
+  speed:400,
+  spaceBetween:10,
+  slidesPerView:1,
   pagination:{
     el:'.swiper-pagination',
     type:'bullets',
