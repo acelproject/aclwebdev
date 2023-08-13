@@ -1539,6 +1539,19 @@ nav ul .group:hover::after {
   color: rgb(255 190 11 / var(--tw-text-opacity));
 }
 
+@media only screen and (max-width: 415px) {
+  .portofolio {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-image: url("/dist/img/porto.jpg");
+    background-repeat: repeat;
+    z-index: 5;
+    background-position: 0px 50px;
+  }
+}
+
 /*end portofolio slider */
 
 .btn-shadow {

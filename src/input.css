@@ -78,6 +78,16 @@ nav ul .group:hover::after {
   @apply text-primary;
 }
 
+@media only screen and (max-width: 415px) {
+  .portofolio {
+  @apply relative bg-cover w-full h-full;
+  background-image: url("/dist/img/porto.jpg");
+  background-repeat: repeat;
+  z-index: 5;
+  background-position: 0px 50px;
+  }
+}
+
 /*end portofolio slider */
 
 .btn-shadow {
