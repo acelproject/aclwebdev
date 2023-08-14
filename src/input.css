@@ -86,7 +86,9 @@ nav ul .group:hover::after {
   z-index: -9999999;
   content: "";
 }
-
+.portofolio .card{
+  @apply rounded-lg overflow-hidden;
+}
 .portofolio .card .dec {
   @apply relative px-5 pb-7;
 }
@@ -94,7 +96,7 @@ nav ul .group:hover::after {
   @apply relative;
 }
 .portofolio .card .dec .tech span::after {
-  @apply absolute -left-2 top-6 rotate-[-70deg] text-primary opacity-0;
+  @apply absolute -left-2 top-5 rotate-[-70deg] text-primary opacity-0;
   transition: 0.2s;
   content: ">";
 }
@@ -112,7 +114,7 @@ nav ul .group:hover::after {
   @apply h-40 scale-125 grayscale transition-transform;
 }
 .portofolio .slider-phone-device .card:hover img {
-  @apply scale-90 grayscale-0;
+  @apply scale-100 grayscale-0;
 }
 
 @media only screen and (max-width: 415px) {
