@@ -15,6 +15,17 @@
   @apply translate-x-[-20px];
 }
 
+.brand span {
+  @apply -left-0;
+  transition: 0.3s;
+}
+.brand:hover .k1 {
+  @apply -left-1;
+}
+.brand:hover .k2 {
+  @apply left-1;
+}
+
 nav ul .group::after {
   @apply mx-auto block h-[2px] w-0 bg-primary;
   content: "";
@@ -50,6 +61,10 @@ nav ul .group:hover::after {
   @apply translate-y-[-14px];
 }
 
+.hero .skills a:hover svg {
+  @apply animate-bounce;
+}
+
 .hero-image {
   @apply border-primary;
   box-shadow: 8px 8px #ffbe0b;
@@ -57,14 +72,12 @@ nav ul .group:hover::after {
 }
 
 .portofolio {
-  @apply relative bg-cover w-full h-full;
+  @apply relative h-full w-full bg-cover;
   background-image: url("/dist/img/porto.jpg");
   background-repeat: no-repeat;
   z-index: 5;
   background-position: 0px -140px;
 }
-
-
 
 /* portofolio slider */
 .portofolio::after {
@@ -74,17 +87,41 @@ nav ul .group:hover::after {
   content: "";
 }
 
-.portofolio .card h3{
-  @apply text-primary;
+.portofolio .card .dec {
+  @apply relative px-5 pb-7;
+}
+.portofolio .card .dec .tech span {
+  @apply relative;
+}
+.portofolio .card .dec .tech span::after {
+  @apply absolute -left-2 top-6 rotate-[-70deg] text-primary opacity-0;
+  transition: 0.2s;
+  content: ">";
+}
+.portofolio .card .dec .tech span:hover::after {
+  @apply opacity-100;
+}
+.portofolio .slider-large-device .card img {
+  @apply h-60 scale-150 grayscale transition-transform;
+}
+.portofolio .slider-large-device .card:hover img {
+  @apply scale-100 grayscale-0;
+}
+
+.portofolio .slider-phone-device .card img {
+  @apply h-40 scale-125 grayscale transition-transform;
+}
+.portofolio .slider-phone-device .card:hover img {
+  @apply scale-90 grayscale-0;
 }
 
 @media only screen and (max-width: 415px) {
   .portofolio {
-  @apply relative bg-cover w-full h-full;
-  background-image: url("/dist/img/porto.jpg");
-  background-repeat: repeat;
-  z-index: 5;
-  background-position: 0px 50px;
+    @apply relative h-full w-full bg-cover;
+    background-image: url("/dist/img/porto.jpg");
+    background-repeat: repeat;
+    z-index: 5;
+    background-position: 0px 50px;
   }
 }
 
@@ -103,48 +140,39 @@ nav ul .group:hover::after {
   box-shadow: 0.2rem 0.2rem #ffbe0b;
 }
 
-
-
-
-
 /* Animasi loading */
-.loader div{
+.loader div {
   display: block;
   position: absolute;
   height: 60px;
   width: 60px;
-  border: 6px solid ;
+  border: 6px solid;
   border-radius: 50%;
   animation: spin 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-  border-color:#ffbe0b transparent transparent transparent ;
+  border-color: #ffbe0b transparent transparent transparent;
 }
 
 @keyframes spin {
-  0%{
-      transform: rotate(0deg);
+  0% {
+    transform: rotate(0deg);
   }
-  100%{
-      transform: rotate(360deg);
+  100% {
+    transform: rotate(360deg);
   }
 }
 
-.loader div:nth-child(1){
+.loader div:nth-child(1) {
   animation-delay: -0.45s;
 }
-.loader div:nth-child(2){
+.loader div:nth-child(2) {
   animation-delay: -0.3s;
 }
-.loader div:nth-child(3){
+.loader div:nth-child(3) {
   animation-delay: -0.45s;
 }
-.loader div:nth-child(4){
+.loader div:nth-child(4) {
   animation-delay: -0.15s;
 }
-
-
-
-
-
 
 @layer base {
   html {
