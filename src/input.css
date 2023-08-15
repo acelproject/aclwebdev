@@ -142,42 +142,58 @@ nav ul .group:hover::after {
   box-shadow: 0.2rem 0.2rem #ffbe0b;
 }
 
-/* Animasi loading */
-.loader div {
-  display: block;
-  position: absolute;
-  height: 60px;
-  width: 60px;
-  border: 6px solid;
-  border-radius: 50%;
-  animation: spin 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-  border-color: #ffbe0b transparent transparent transparent;
+
+/* LOADING ANIMATION */
+.spinner .rec1,.spinner .rec2,.spinner .rec3,.spinner .rec4,.spinner .rec5,.spinner .rec6 {
+  @apply rounded-full;
+  background-color: #ffbe0b;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+  -webkit-animation:sk-stretchdelay 1.2s infinite ease-in-out;
+  animation:sk-stretchdelay 1.2s infinite ease-in-out;
 }
 
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
+.spinner .rec1{
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+.spinner .rec2{
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+.spinner .rec3{
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+.spinner .rec4{
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+.spinner .rec5{
+  -webkit-animation-delay: -0.7s;
+  animation-delay: -0.7s;
+}
+.spinner .rec6{
+  -webkit-animation-delay: -0.6;
+  animation-delay: -0.6;
+}
+
+@-webkit-keyframes sk-stretchdelay {
+  0%, 40%, 100% {
+    -webkit-transform: scaleY(0.4);
   }
-  100% {
-    transform: rotate(360deg);
+  20%{
+    -webkit-transform: scaleY(1.0);
   }
 }
 
-.loader div:nth-child(1) {
-  animation-delay: -0.45s;
-}
-.loader div:nth-child(2) {
-  animation-delay: -0.3s;
-}
-.loader div:nth-child(3) {
-  animation-delay: -0.45s;
-}
-.loader div:nth-child(4) {
-  animation-delay: -0.15s;
-}
-
-@layer base {
-  html {
-    scroll-behavior: smooth;
+@keyframes sk-stretchdelay{
+  0%, 40%, 100% {
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }20%{
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
   }
 }

@@ -17,6 +17,9 @@
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
     <!-- swiper js -->
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- End AOS -->
     <!-- // On page load or when changing themes, best to add inline in `head` to avoid FOUC -->
     <script>
       if (
@@ -36,12 +39,21 @@
       class="load-wrapper fixed z-[9999] flex h-[100vh] w-full flex-col flex-wrap items-center justify-center overflow-hidden bg-[#000000a1]"
     >
       <div
-        class="loader relative z-[99999] m-[20px] mb-[50px] inline-block h-[75px] w-[75px]"
+        class="spinner flex flex-col justify-center items-center absolute -mt-12  mx-auto my-[100px] h-[70px] w-[100px] text-center text-[10px]"
       >
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <span class="brand animate-pulse text-2xl text-white transition">
+          <span class="relative text-primary">{</span>aclwebdev<span
+            class="relative text-primary"
+            >}</span
+          >
+        </span>
+          <div class="mx-auto w-full h-full">
+            <div class="rec1"></div>
+          <div class="rec2"></div>
+          <div class="rec3"></div>
+          <div class="rec4"></div>
+          <div class="rec5"></div>
+          </div>
       </div>
     </div>
     <!-- end Loader animastion -->
@@ -82,20 +94,6 @@
             >Portfolio</a
           >
         </li>
-        <!-- <li class="group">
-          <a
-            href="#clients"
-            class="mx-8 flex py-2 text-base text-mydark group-hover:text-primary dark:text-white"
-            >Clients</a
-          >
-        </li> -->
-        <!-- <li class="group">
-          <a
-            href="#blog"
-            class="mx-8 flex py-2 text-base text-mydark group-hover:text-primary dark:text-white"
-            >Blog</a
-          >
-        </li> -->
         <li class="group">
           <a
             href="#contact"
@@ -111,16 +109,15 @@
     >
       <div class="container">
         <div class="relative flex items-center justify-between">
-          <div class="flex px-3 text-2xl font-bold">
+          <div class="flex px-3 text-2xl font-bold" data-aos="fade-down" data-aos-delay="2500">
             <a href="#" class="brand transition dark:text-white">
-              <!-- <img src="dist/img/logo.png" class="h-7 w-9 rounded-full inline-flex mr-4" alt=""> -->
               <span class="k1 relative text-primary">{</span>aclwebdev<span
                 class="k2 relative text-primary"
                 >}</span
               >
             </a>
           </div>
-          <div class="flex items-center px-4">
+          <div class="flex items-center px-4" data-aos="fade-up" data-aos-delay="2500">
             <div class="relative flex items-center gap-5">
               <!-- Darkmode -->
               <div
@@ -186,20 +183,6 @@
                     >Portfolio</a
                   >
                 </li>
-                <!-- <li class="group">
-                  <a
-                    href="#clients"
-                    class="mx-8 flex py-2 text-base text-mydark group-hover:text-primary dark:text-white"
-                    >Clients</a
-                  >
-                </li> -->
-                <!-- <li class="group">
-                  <a
-                    href="#blog"
-                    class="mx-8 flex py-2 text-base text-mydark group-hover:text-primary dark:text-white"
-                    >Blog</a
-                  >
-                </li> -->
                 <li class="group">
                   <a
                     href="#contact"
@@ -248,7 +231,7 @@
     >
       <div class="container">
         <div class="flex flex-wrap">
-          <div class="w-full self-center px-4 lg:w-1/2 lg:pl-[150px]">
+          <div class="w-full self-center px-4 lg:w-1/2 lg:pl-[150px]" data-aos="fade-right" data-aos-delay="2700">
             <div class="inline-block lg:-mb-5">
               <h1
                 class="text-base font-semibold text-mydark dark:text-white md:text-xl lg:mb-1 lg:text-2xl"
@@ -277,17 +260,6 @@
                 | Content Creator
               </h2>
             </div>
-            <!-- <p
-              class="mb-3 italic leading-relaxed text-slate-600 dark:text-slate-300 lg:mb-4"
-            >
-              "Kata-kata Hari Ini."
-            </p> -->
-
-            <!-- <button
-              id="btn-quote"
-              class="rounded-full bg-primary px-8 py-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-90 hover:shadow-lg"
-            >Quotes
-            </button> -->
             <div class="skills my-5 flex items-center">
               <!-- youtube -->
               <a
@@ -409,33 +381,18 @@
           </div>
           <div
             class="hero-image relative mx-auto mt-16 h-[260px] w-[260px] overflow-hidden md:mx-0 md:mt-0 md:h-[360px] md:w-[360px] lg:right-[-130px] lg:top-6"
+            data-aos="fade-down"
+            data-aos-delay="2500"
           >
             <img
               src="dist/img/acel.png"
               alt=""
               id="hero-img"
               class="top-0 z-10 mx-auto max-w-full"
+              data-aos="fade-up"
+              data-aos-delay="2700"
             />
           </div>
-          <!-- <div class="w-full self-end px-4 lg:w-1/2">
-            <div class="relative flex mt-10 overflow-hidden lg:right-0 lg:m-0">
-              <span
-                class="absolute -top-4 left-1/2 h-[400px] w-[400px] -translate-x-1/2 sm:h-[600px] sm:w-[600px]"
-              >
-                <svg
-                  class="left-0"
-                  viewBox="0 0 200 200"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill="#FFBE0B"
-                    d="M45,-8.1C53,10,50.5,38,36.8,47.1C23.1,56.2,-1.7,46.3,-20.6,31.8C-39.4,17.3,-52.4,-2,-47.9,-15.1C-43.5,-28.3,-21.8,-35.3,-1.6,-34.8C18.5,-34.2,37,-26.1,45,-8.1Z"
-                    transform="translate(100 100) scale(1.2)"
-                  />
-                </svg>
-              </span>
-            </div>
-          </div> -->
         </div>
       </div>
     </section>
@@ -486,7 +443,7 @@
     >
       <div class="container">
         <div class="flex flex-wrap">
-          <div class="mb-10 w-full px-4 lg:w-1/2 lg:pl-[150px]">
+          <div class="mb-10 w-full px-4 lg:w-1/2 lg:pl-[150px]" data-aos="fade-down" data-aos-delay="100" data-aos-duration="1500">
             <h4 class="mb-3 text-lg font-bold uppercase text-primary">
               Tentang Saya
             </h4>
@@ -518,6 +475,7 @@
           </div>
           <div
             class="mx-auto flex w-full flex-col items-center justify-center px-4 lg:w-1/2"
+            data-aos="fade-down" data-aos-delay="100" data-aos-duration="1500"
           >
             <div class="">
               <h3
@@ -525,9 +483,6 @@
               >
                 Keahlian saya
               </h3>
-              <!-- <p
-              class="max-w-xl mb-3 text-base text-slate-700 dark:text-slate-300 lg:text-lg"
-            >Beberapa keahlian yang saya miliki.</p> -->
               <div class="my-6 flex items-center">
                 <!-- youtube -->
                 <a
@@ -642,7 +597,7 @@
               </div>
             </div>
             <div class="">
-              <img src="dist/img/work.png" alt="" />
+              <img src="dist/img/work.png" alt="" data-aos="fade-up" data-aos-delay="200"/>
             </div>
           </div>
         </div>
@@ -655,7 +610,7 @@
       id="portfolio"
       class="portofolio h-auto bg-slate-100 bg-fixed py-24 pt-10 dark:bg-[#343a40] md:pb-20 md:pt-20"
     >
-      <div class="w-full px-4">
+      <div class="w-full px-4" data-aos="fade-down"  data-aos-duration="1000">
         <div class="container">
           <div class="mx-auto mb-16 max-w-xl text-center">
             <h4 class="mb-2 text-lg font-semibold text-primary">Portfolio</h4>
@@ -664,11 +619,6 @@
             >
               Project terbaru
             </h2>
-            <!-- <p class="text-md text-slate-600 dark:text-slate-300 md:text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
-              doloremque suscipit beatae fugiat accusamus quae iusto. Dolorum,
-              quam. Temporibus, nemo.
-            </p> -->
           </div>
         </div>
         <div class="-m-5 mx-auto justify-center xl:mx-auto">
@@ -680,10 +630,8 @@
               <div class="swiper-wrapper flex w-full flex-nowrap pb-10">
                 <!-- Slides -->
                 <!-- large divace -->
-                <div class="swiper-slide">
-                  <div
-                    class="card w-full bg-white dark:bg-[#343a40]"
-                  >
+                <div class="swiper-slide" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">
+                  <div class="card w-full bg-white dark:bg-[#343a40]"  >
                     <div class="overflow-hidden shadow-md">
                       <img
                         src="dist/img/p-1.png"
@@ -711,10 +659,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide">
-                  <div
-                    class="card w-full bg-white dark:bg-[#343a40]"
-                  >
+                <div class="swiper-slide" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600">
+                  <div class="card w-full bg-white dark:bg-[#343a40]">
                     <div class="overflow-hidden shadow-md">
                       <img
                         src="dist/img/p-3.png"
@@ -741,10 +687,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide">
-                  <div
-                    class="card w-full bg-white dark:bg-[#343a40]"
-                  >
+                <div class="swiper-slide" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1000">
+                  <div class="card w-full bg-white dark:bg-[#343a40]">
                     <div class="overflow-hidden shadow-md">
                       <img
                         src="dist/img/p-4.png"
@@ -779,10 +723,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide">
-                  <div
-                    class="card w-full bg-white dark:bg-[#343a40]"
-                  >
+                <div class="swiper-slide" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1600">
+                  <div class="card w-full bg-white dark:bg-[#343a40]">
                     <div class="overflow-hidden shadow-md">
                       <img
                         src="dist/img/p-2.png"
@@ -832,10 +774,8 @@
               <div class="swiper-wrapper flex w-full flex-nowrap">
                 <!-- Slides -->
                 <!-- large divace -->
-                <div class="swiper-slide">
-                  <div
-                    class="card w-full bg-white dark:bg-[#343a40]"
-                  >
+                <div class="swiper-slide" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">
+                  <div class="card w-full bg-white dark:bg-[#343a40]">
                     <div class="overflow-hidden shadow-md">
                       <img
                         src="dist/img/p-1.png"
@@ -863,10 +803,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide">
-                  <div
-                    class="card w-full bg-white dark:bg-[#343a40]"
-                  >
+                <div class="swiper-slide" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600">
+                  <div class="card w-full bg-white dark:bg-[#343a40]">
                     <div class="overflow-hidden shadow-md">
                       <img
                         src="dist/img/p-3.png"
@@ -893,10 +831,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide">
-                  <div
-                    class="card w-full bg-white dark:bg-[#343a40]"
-                  >
+                <div class="swiper-slide" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1000">
+                  <div class="card w-full bg-white dark:bg-[#343a40]">
                     <div class="overflow-hidden shadow-md">
                       <img
                         src="dist/img/p-4.png"
@@ -931,10 +867,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide">
-                  <div
-                    class="card w-full bg-white dark:bg-[#343a40]"
-                  >
+                <div class="swiper-slide" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1600">
+                  <div class="card w-full bg-white dark:bg-[#343a40]">
                     <div class="overflow-hidden shadow-md">
                       <img
                         src="dist/img/p-2.png"
@@ -1145,7 +1079,7 @@
     <!-- Contact -->
     <section id="contact" class="pb-32 pt-36 dark:bg-[#343a40]">
       <div class="container">
-        <div class="w-full px-4">
+        <div class="w-full px-4" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100">
           <div class="mx-auto mb-16 max-w-xl text-center">
             <h4 class="mb-2 text-lg font-semibold text-primary">Contact</h4>
             <h2
@@ -1153,33 +1087,29 @@
             >
               Hubungi kami
             </h2>
-            <!-- <p class="text-md text-slate-600 dark:text-slate-300 md:text-lg">
-              Berikan Kami Kritik, Saran dan tanggapan.
-            </p> -->
           </div>
         </div>
 
         <form action="">
           <div class="mx-auto w-full md:w-1/2">
-            <div class="mb-8 w-full px-4">
+            <div class="mb-8 w-full px-4" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="150">
               <label for="name" class="text-base font-bold text-primary"
                 >Nama</label
               >
               <input
                 type="text"
                 id="name"
-                class="mt-2 w-full bg-slate-200 p-2 text-mydark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary rounded-md"
+                class="mt-2 w-full rounded-md bg-slate-200 p-2 text-mydark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
               />
             </div>
-            <div class="mb-6 w-full px-4">
+            <div class="mb-6 w-full px-4" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
               <label for="email" class="text-base font-bold text-primary"
                 >Email</label
               >
-              <!-- <label for="email" class="text-base font-bold text-primary after:content-['*'] after:text-red-500 after:ml-1">Email</label> -->
               <input
                 type="email"
                 id="email"
-                class="peer mt-2 w-full bg-slate-200 p-2 text-mydark invalid:text-red-500 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary invalid:focus:ring-red-500 rounded-md"
+                class="peer mt-2 w-full rounded-md bg-slate-200 p-2 text-mydark invalid:text-red-500 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary invalid:focus:ring-red-500"
               />
               <p
                 class="invisible m-1 text-sm text-red-500 peer-invalid:visible"
@@ -1187,17 +1117,17 @@
                 Email tidak valid.
               </p>
             </div>
-            <div class="mb-8 w-full px-4">
+            <div class="mb-8 w-full px-4" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="250">
               <label for="pesan" class="text-base font-bold text-primary"
                 >Pesan</label
               >
               <textarea
                 type="text"
                 id="pesan"
-                class="mt-2 h-28 w-full bg-slate-200 p-2 text-mydark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary rounded-md"
+                class="mt-2 h-28 w-full rounded-md bg-slate-200 p-2 text-mydark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
               ></textarea>
             </div>
-            <div class="w-full px-4">
+            <div class="w-full px-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
               <button
                 class="w-full rounded-full bg-primary px-6 py-2 text-base font-semibold uppercase text-white transition duration-300 hover:opacity-90 hover:shadow-lg"
               >
@@ -1214,14 +1144,14 @@
     <section class="bg-mydark pb-12 pt-24">
       <div class="container">
         <div class="mx-auto flex flex-wrap justify-center md:w-10/12">
-          <div class="mb-12 w-full px-4 text-slate-200 md:w-1/3">
+          <div class="mb-12 w-full px-4 text-slate-200 md:w-1/3" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100">
             <h2 class="mb-5 text-4xl font-bold text-primary">Aclwebdev</h2>
             <h3 class="mb-2 text-2xl font-bold">Hubungi Kami</h3>
             <p>aclprcjt@gmail.com</p>
             <p>Jl. Trans Sulawesi, Desa Matako</p>
             <p>Kec.Tojo Barat</p>
           </div>
-          <div class="mb-12 w-full px-4 md:w-1/3">
+          <div class="mb-12 w-full px-4 md:w-1/3" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="150">
             <h3 class="mb-5 text-xl font-semibold text-white">
               Project Terbaru
             </h3>
@@ -1249,7 +1179,7 @@
               </li>
             </ul>
           </div>
-          <div class="mb-12 w-full px-4 md:w-1/3">
+          <div class="mb-12 w-full px-4 md:w-1/3" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
             <h3 class="mb-5 text-xl font-semibold text-white">Tautan</h3>
             <ul>
               <li>
@@ -1305,6 +1235,7 @@
               href="https://youtube.com/@acelwebdev"
               target="_blank"
               class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-400 text-primary transition ease-in-out hover:border-primary hover:bg-primary hover:text-white"
+              data-aos="fade-down" data-aos-delay="50"
             >
               <svg
                 class="fill-current"
@@ -1324,6 +1255,7 @@
               href="https://instagram.com/aclwebdev"
               target="_blank"
               class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-400 text-primary transition ease-in-out hover:border-primary hover:bg-primary hover:text-white"
+              data-aos="fade-down" data-aos-delay="100"
             >
               <svg
                 class="fill-current"
@@ -1343,6 +1275,7 @@
               href="https://www.tiktok.com/@aclwebdev?_t=8eMKjiuFdJ4&_r=1"
               target="_blank"
               class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-400 text-primary transition ease-in-out hover:border-primary hover:bg-primary hover:text-white"
+              data-aos="fade-down" data-aos-delay="150"
             >
               <svg
                 class="fill-current"
@@ -1362,6 +1295,7 @@
               href="#"
               target="_blank"
               class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-400 text-primary transition ease-in-out hover:border-primary hover:bg-primary hover:text-white"
+              data-aos="fade-down" data-aos-delay="200"
             >
               <svg
                 class="fill-current"
@@ -1381,6 +1315,7 @@
               href="https://github.com/acelproject"
               target="_blank"
               class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-400 text-primary transition ease-in-out hover:border-primary hover:bg-primary hover:text-white"
+              data-aos="fade-down" data-aos-delay="250"
             >
               <svg
                 class="fill-current"
@@ -1411,6 +1346,10 @@
     <!-- Footer end-->
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script
       src="https://kit.fontawesome.com/71bba478e7.js"
       crossorigin="anonymous"

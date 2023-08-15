@@ -434,10 +434,6 @@ video {
   display: none;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -668,10 +664,6 @@ html {
   z-index: 105;
 }
 
-.z-\[99999\] {
-  z-index: 99999;
-}
-
 .z-\[9999\] {
   z-index: 9999;
 }
@@ -694,10 +686,6 @@ html {
 
 .m-5 {
   margin: 1.25rem;
-}
-
-.m-\[20px\] {
-  margin: 20px;
 }
 
 .m-auto {
@@ -727,6 +715,15 @@ html {
 .my-6 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+}
+
+.my-\[100px\] {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.-mt-12 {
+  margin-top: -3rem;
 }
 
 .mb-10 {
@@ -763,10 +760,6 @@ html {
 
 .mb-8 {
   margin-bottom: 2rem;
-}
-
-.mb-\[50px\] {
-  margin-bottom: 50px;
 }
 
 .ml-3 {
@@ -873,8 +866,8 @@ html {
   height: 400px;
 }
 
-.h-\[75px\] {
-  height: 75px;
+.h-\[70px\] {
+  height: 70px;
 }
 
 .h-auto {
@@ -905,16 +898,16 @@ html {
   width: 2.25rem;
 }
 
+.w-\[100px\] {
+  width: 100px;
+}
+
 .w-\[260px\] {
   width: 260px;
 }
 
 .w-\[400px\] {
   width: 400px;
-}
-
-.w-\[75px\] {
-  width: 75px;
 }
 
 .w-full {
@@ -996,6 +989,16 @@ html {
 
 .animate-naik-turun {
   animation: naikTurun 1s ease-in-out;
+}
+
+@keyframes pulse {
+  50% {
+    opacity: .5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 .cursor-pointer {
@@ -1249,6 +1252,10 @@ html {
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
+}
+
+.text-\[10px\] {
+  font-size: 10px;
 }
 
 .text-base {
@@ -1708,43 +1715,51 @@ nav ul .group:hover::after {
   box-shadow: 0.2rem 0.2rem #ffbe0b;
 }
 
-/* Animasi loading */
+/* LOADING ANIMATION */
 
-.loader div {
-  display: block;
-  position: absolute;
-  height: 60px;
-  width: 60px;
-  border: 6px solid;
-  border-radius: 50%;
-  animation: spin 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-  border-color: #ffbe0b transparent transparent transparent;
+.spinner .rec1,.spinner .rec2,.spinner .rec3,.spinner .rec4,.spinner .rec5,.spinner .rec6 {
+  border-radius: 9999px;
+  background-color: #ffbe0b;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+  animation:sk-stretchdelay 1.2s infinite ease-in-out;
 }
 
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
+.spinner .rec1{
+  animation-delay: -1.1s;
+}
+
+.spinner .rec2{
+  animation-delay: -1.0s;
+}
+
+.spinner .rec3{
+  animation-delay: -0.9s;
+}
+
+.spinner .rec4{
+  animation-delay: -0.8s;
+}
+
+.spinner .rec5{
+  animation-delay: -0.7s;
+}
+
+.spinner .rec6{
+  animation-delay: -0.6;
+}
+
+@keyframes sk-stretchdelay{
+  0%, 40%, 100% {
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
   }
 
-  100% {
-    transform: rotate(360deg);
+  20%{
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
   }
-}
-
-.loader div:nth-child(1) {
-  animation-delay: -0.45s;
-}
-
-.loader div:nth-child(2) {
-  animation-delay: -0.3s;
-}
-
-.loader div:nth-child(3) {
-  animation-delay: -0.45s;
-}
-
-.loader div:nth-child(4) {
-  animation-delay: -0.15s;
 }
 
 .after\:ml-1::after {

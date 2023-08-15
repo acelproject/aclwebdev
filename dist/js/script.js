@@ -16,7 +16,7 @@ const stopLoader = () => {
 window.addEventListener("load", () => {
   let bodyLoad = document.querySelector("body");
   bodyLoad.classList.add("overflow-hidden");
-  setTimeout(playLoader, 1000);
+  setTimeout(playLoader, 2500);
 });
 
 // Hamburger
