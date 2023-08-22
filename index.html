@@ -39,7 +39,7 @@
       class="load-wrapper fixed z-[9999] flex h-[100vh] w-full flex-col flex-wrap items-center justify-center overflow-hidden bg-[#000000a1]"
     >
       <div
-        class="spinner flex flex-col justify-center items-center absolute -mt-12  mx-auto my-[100px] h-[70px] w-[100px] text-center text-[10px]"
+        class="spinner absolute mx-auto my-[100px] -mt-12 flex h-[70px] w-[100px] flex-col items-center justify-center text-center text-[10px]"
       >
         <span class="brand animate-pulse text-2xl text-white transition">
           <span class="relative text-primary">{</span>aclwebdev<span
@@ -47,13 +47,13 @@
             >}</span
           >
         </span>
-          <div class="mx-auto w-full h-full">
-            <div class="rec1"></div>
+        <div class="mx-auto h-full w-full">
+          <div class="rec1"></div>
           <div class="rec2"></div>
           <div class="rec3"></div>
           <div class="rec4"></div>
           <div class="rec5"></div>
-          </div>
+        </div>
       </div>
     </div>
     <!-- end Loader animastion -->
@@ -109,7 +109,11 @@
     >
       <div class="container">
         <div class="relative flex items-center justify-between">
-          <div class="flex px-3 text-2xl font-bold" data-aos="fade-down" data-aos-delay="2500">
+          <div
+            class="flex px-3 text-2xl font-bold"
+            data-aos="fade-down"
+            data-aos-delay="2500"
+          >
             <a href="#" class="brand transition dark:text-white">
               <span class="k1 relative text-primary">{</span>aclwebdev<span
                 class="k2 relative text-primary"
@@ -117,7 +121,11 @@
               >
             </a>
           </div>
-          <div class="flex items-center px-4" data-aos="fade-up" data-aos-delay="2500">
+          <div
+            class="flex items-center px-4"
+            data-aos="fade-up"
+            data-aos-delay="2500"
+          >
             <div class="relative flex items-center gap-5">
               <!-- Darkmode -->
               <div
@@ -231,7 +239,11 @@
     >
       <div class="container">
         <div class="flex flex-wrap">
-          <div class="w-full self-center px-4 lg:w-1/2 lg:pl-[150px]" data-aos="fade-right" data-aos-delay="2700">
+          <div
+            class="w-full self-center px-4 lg:w-1/2 lg:pl-[150px]"
+            data-aos="fade-right"
+            data-aos-delay="2700"
+          >
             <div class="inline-block lg:-mb-5">
               <h1
                 class="text-base font-semibold text-mydark dark:text-white md:text-xl lg:mb-1 lg:text-2xl"
@@ -443,7 +455,12 @@
     >
       <div class="container">
         <div class="flex flex-wrap">
-          <div class="mb-10 w-full px-4 lg:w-1/2 lg:pl-[150px]" data-aos="fade-down" data-aos-delay="100" data-aos-duration="1500">
+          <div
+            class="mb-10 w-full px-4 lg:w-1/2 lg:pl-[150px]"
+            data-aos="fade-down"
+            data-aos-delay="100"
+            data-aos-duration="1500"
+          >
             <h4 class="mb-3 text-lg font-bold uppercase text-primary">
               Tentang Saya
             </h4>
@@ -475,7 +492,9 @@
           </div>
           <div
             class="mx-auto flex w-full flex-col items-center justify-center px-4 lg:w-1/2"
-            data-aos="fade-down" data-aos-delay="100" data-aos-duration="1500"
+            data-aos="fade-down"
+            data-aos-delay="100"
+            data-aos-duration="1500"
           >
             <div class="">
               <h3
@@ -597,7 +616,12 @@
               </div>
             </div>
             <div class="">
-              <img src="dist/img/work.png" alt="" data-aos="fade-up" data-aos-delay="200"/>
+              <img
+                src="dist/img/work.png"
+                alt=""
+                data-aos="fade-up"
+                data-aos-delay="200"
+              />
             </div>
           </div>
         </div>
@@ -610,7 +634,7 @@
       id="portfolio"
       class="portofolio h-auto bg-slate-100 bg-fixed py-24 pt-10 dark:bg-[#343a40] md:pb-20 md:pt-20"
     >
-      <div class="w-full px-4" data-aos="fade-down"  data-aos-duration="1000">
+      <div class="w-full px-4" data-aos="fade-down" data-aos-duration="1000">
         <div class="container">
           <div class="mx-auto mb-16 max-w-xl text-center">
             <h4 class="mb-2 text-lg font-semibold text-primary">Portfolio</h4>
@@ -630,8 +654,13 @@
               <div class="swiper-wrapper flex w-full flex-nowrap pb-10">
                 <!-- Slides -->
                 <!-- large divace -->
-                <div class="swiper-slide" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">
-                  <div class="card w-full bg-white dark:bg-[#343a40]"  >
+                <div
+                  class="swiper-slide"
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                  data-aos-delay="100"
+                >
+                  <div class="card relative w-full bg-white dark:bg-mydark ">
                     <div class="overflow-hidden shadow-md">
                       <img
                         src="dist/img/p-1.png"
@@ -657,10 +686,31 @@
                         <span><i class="fab fa-js text-yellow-400"></i></span>
                       </div>
                     </div>
+                    <div class="github absolute bottom-0 right-0 p-4 bg-primary rounded-tl-[60px] cursor-pointer text-white dark:text-mydark">
+                      <span class="relative top-1 left-1">
+                        <svg
+                        class="fill-current"
+                        width="25"
+                        role="img"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <title>GitHub</title>
+                        <path
+                          d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                        />
+                      </svg>
+                      </span>
+                    </div>
                   </div>
                 </div>
-                <div class="swiper-slide" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600">
-                  <div class="card w-full bg-white dark:bg-[#343a40]">
+                <div
+                  class="swiper-slide"
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                  data-aos-delay="600"
+                >
+                  <div class="card w-full bg-white dark:bg-mydark relative">
                     <div class="overflow-hidden shadow-md">
                       <img
                         src="dist/img/p-3.png"
@@ -685,10 +735,31 @@
                         ></span>
                       </div>
                     </div>
+                    <div class="github absolute bottom-0 right-0 p-4 bg-primary rounded-tl-[60px] cursor-pointer text-white dark:text-mydark">
+                      <span class="relative top-1 left-1">
+                        <svg
+                        class="fill-current"
+                        width="25"
+                        role="img"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <title>GitHub</title>
+                        <path
+                          d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                        />
+                      </svg>
+                      </span>
+                    </div>
                   </div>
                 </div>
-                <div class="swiper-slide" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1000">
-                  <div class="card w-full bg-white dark:bg-[#343a40]">
+                <div
+                  class="swiper-slide"
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                  data-aos-delay="1000"
+                >
+                  <div class="card w-full bg-white dark:bg-mydark relative">
                     <div class="overflow-hidden shadow-md">
                       <img
                         src="dist/img/p-4.png"
@@ -721,10 +792,31 @@
                         </span>
                       </div>
                     </div>
+                    <div class="github absolute bottom-0 right-0 p-4 bg-primary rounded-tl-[60px] cursor-pointer text-white dark:text-mydark">
+                      <span class="relative top-1 left-1">
+                        <svg
+                        class="fill-current"
+                        width="25"
+                        role="img"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <title>GitHub</title>
+                        <path
+                          d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                        />
+                      </svg>
+                      </span>
+                    </div>
                   </div>
                 </div>
-                <div class="swiper-slide" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1600">
-                  <div class="card w-full bg-white dark:bg-[#343a40]">
+                <div
+                  class="swiper-slide"
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                  data-aos-delay="1600"
+                >
+                  <div class="card w-full bg-white dark:bg-mydark relative">
                     <div class="overflow-hidden shadow-md">
                       <img
                         src="dist/img/p-2.png"
@@ -750,18 +842,33 @@
                         <span><i class="fab fa-js text-yellow-400"></i></span>
                       </div>
                     </div>
+                    <div class="github absolute bottom-0 right-0 p-4 bg-primary rounded-tl-[60px] cursor-pointer text-white dark:text-mydark">
+                      <span class="relative top-1 left-1">
+                        <svg
+                        class="fill-current"
+                        width="25"
+                        role="img"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <title>GitHub</title>
+                        <path
+                          d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                        />
+                      </svg>
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
               <!-- If we need pagination -->
               <div class="swiper-pagination"></div>
-
+              <!-- If we need scrollbar -->
+            </div>
+            <div class="pagination">
               <!-- If we need navigation buttons -->
               <div class="swiper-button-prev"></div>
               <div class="swiper-button-next"></div>
-
-              <!-- If we need scrollbar -->
-              <div class="swiper-scrollbar"></div>
             </div>
             <!--end swiper js -->
           </div>
@@ -774,8 +881,13 @@
               <div class="swiper-wrapper flex w-full flex-nowrap">
                 <!-- Slides -->
                 <!-- large divace -->
-                <div class="swiper-slide" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">
-                  <div class="card w-full bg-white dark:bg-[#343a40]">
+                <div
+                  class="swiper-slide"
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                  data-aos-delay="100"
+                >
+                  <div class="card w-full bg-white dark:bg-myDark relative">
                     <div class="overflow-hidden shadow-md">
                       <img
                         src="dist/img/p-1.png"
@@ -801,10 +913,31 @@
                         <span><i class="fab fa-js text-yellow-400"></i></span>
                       </div>
                     </div>
+                    <div class="github absolute bottom-0 right-0 p-4 bg-primary rounded-tl-[60px] cursor-pointer text-white dark:text-mydark">
+                      <span class="relative top-1 left-1">
+                        <svg
+                        class="fill-current"
+                        width="25"
+                        role="img"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <title>GitHub</title>
+                        <path
+                          d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                        />
+                      </svg>
+                      </span>
+                    </div>
                   </div>
                 </div>
-                <div class="swiper-slide" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600">
-                  <div class="card w-full bg-white dark:bg-[#343a40]">
+                <div
+                  class="swiper-slide"
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                  data-aos-delay="600"
+                >
+                  <div class="card w-full bg-white dark:bg-myDark relative">
                     <div class="overflow-hidden shadow-md">
                       <img
                         src="dist/img/p-3.png"
@@ -829,10 +962,31 @@
                         ></span>
                       </div>
                     </div>
+                    <div class="github absolute bottom-0 right-0 p-4 bg-primary rounded-tl-[60px] cursor-pointer text-white dark:text-mydark">
+                      <span class="relative top-1 left-1">
+                        <svg
+                        class="fill-current"
+                        width="25"
+                        role="img"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <title>GitHub</title>
+                        <path
+                          d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                        />
+                      </svg>
+                      </span>
+                    </div>
                   </div>
                 </div>
-                <div class="swiper-slide" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1000">
-                  <div class="card w-full bg-white dark:bg-[#343a40]">
+                <div
+                  class="swiper-slide"
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                  data-aos-delay="1000"
+                >
+                  <div class="card w-full bg-white dark:bg-myDark relative">
                     <div class="overflow-hidden shadow-md">
                       <img
                         src="dist/img/p-4.png"
@@ -865,10 +1019,31 @@
                         </span>
                       </div>
                     </div>
+                    <div class="github absolute bottom-0 right-0 p-4 bg-primary rounded-tl-[60px] cursor-pointer text-white dark:text-mydark">
+                      <span class="relative top-1 left-1">
+                        <svg
+                        class="fill-current"
+                        width="25"
+                        role="img"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <title>GitHub</title>
+                        <path
+                          d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                        />
+                      </svg>
+                      </span>
+                    </div>
                   </div>
                 </div>
-                <div class="swiper-slide" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1600">
-                  <div class="card w-full bg-white dark:bg-[#343a40]">
+                <div
+                  class="swiper-slide"
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                  data-aos-delay="1600"
+                >
+                  <div class="card w-full bg-white dark:bg-myDark relative">
                     <div class="overflow-hidden shadow-md">
                       <img
                         src="dist/img/p-2.png"
@@ -894,17 +1069,34 @@
                         <span><i class="fab fa-js text-yellow-400"></i></span>
                       </div>
                     </div>
+                    <div class="github absolute bottom-0 right-0 p-4 bg-primary rounded-tl-[60px] cursor-pointer text-white dark:text-mydark">
+                      <span class="relative top-1 left-1">
+                        <svg
+                        class="fill-current"
+                        width="25"
+                        role="img"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <title>GitHub</title>
+                        <path
+                          d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                        />
+                      </svg>
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
+              <!-- If we need scrollbar -->
+              <div class="swiper-scrollbar"></div>
+            </div>
+            <div class="pagination-phone">
               <!-- If we need pagination -->
 
               <!-- If we need navigation buttons -->
               <div class="swiper-button-prev"></div>
               <div class="swiper-button-next"></div>
-
-              <!-- If we need scrollbar -->
-              <div class="swiper-scrollbar"></div>
             </div>
             <!--end swiper js -->
           </div>
@@ -913,173 +1105,15 @@
     </section>
     <!-- Portofolio end-->
 
-    <!-- Clients -->
-    <!-- <section id="clients" class="bg-slate-800 pb-32 pt-36 dark:bg-mydark">
-      <div class="container">
-        <div class="w-full px-4">
-          <div class="mx-auto mb-16 text-center">
-            <h4 class="mb-2 text-lg font-semibold text-primary">Clients</h4>
-            <h2
-              class="mb-4 text-3xl font-bold text-white sm:text-4xl lg:text-5xl"
-            >
-              Yang Pernah Bekerja Sama
-            </h2>
-          </div>
-        </div>
-        <div class="w-full px-4">
-          <div class="flex flex-wrap items-center justify-center">
-            <a
-              href=""
-              class="mx-4 max-w-[80px] py-2 opacity-60 grayscale duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
-              ><img
-                src="dist/img/client/1.png"
-                alt=""
-                class="rounded-full bg-white"
-            /></a>
-            <a
-              href=""
-              class="mx-4 max-w-[80px] py-2 opacity-60 grayscale duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
-              ><img
-                src="dist/img/client/1.png"
-                alt=""
-                class="rounded-full bg-white"
-            /></a>
-            <a
-              href=""
-              class="mx-4 max-w-[80px] py-2 opacity-60 grayscale duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
-              ><img
-                src="dist/img/client/1.png"
-                alt=""
-                class="rounded-full bg-white"
-            /></a>
-            <a
-              href=""
-              class="mx-4 max-w-[80px] py-2 opacity-60 grayscale duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
-              ><img
-                src="dist/img/client/1.png"
-                alt=""
-                class="rounded-full bg-white"
-            /></a>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- Clients end-->
-
-    <!-- Blog -->
-    <!-- <section id="blog" class="bg-slate-100 pb-32 pt-36 dark:bg-[#343a40]">
-      <div class="container">
-        <div class="w-full px-4">
-          <div class="mx-auto mb-16 max-w-xl text-center">
-            <h4 class="mb-2 text-lg font-semibold text-primary">Blog</h4>
-            <h2
-              class="mb-4 text-3xl font-bold text-mydark dark:text-white sm:text-4xl lg:text-5xl"
-            >
-              tulisan Terkini
-            </h2>
-            <p class="text-md text-slate-600 dark:text-slate-300 md:text-lg">
-              beberapa artikel atau tulisan terkini dari kami.
-            </p>
-          </div>
-        </div>
-
-        <div class="flex flex-wrap xl:mx-auto xl:w-9/12">
-          <div class="w-full px-4 md:w-1/2 xl:w-1/3">
-            <div
-              class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-[#495057]"
-            >
-              <img
-                src="https://source.unsplash.com/360x200?programming"
-                alt="Programming"
-                class="w-full"
-              />
-              <div class="px-6 py-6">
-                <h3>
-                  <a
-                    href=""
-                    class="mb-3 block truncate text-xl font-semibold text-mydark hover:text-primary dark:text-white dark:hover:text-primary"
-                    >Tips belajar Programming</a
-                  >
-                </h3>
-                <p class="mb-6 text-slate-800 dark:text-slate-300">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Labore, eveniet?
-                </p>
-                <a
-                  href="#"
-                  class="rounded-lg bg-primary px-4 py-2 text-sm text-white duration-300 hover:opacity-80"
-                  >Baca Selengkapnya</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="w-full px-4 md:w-1/2 xl:w-1/3">
-            <div
-              class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-[#495057]"
-            >
-              <img
-                src="https://source.unsplash.com/360x200?tech"
-                alt="Teknologi"
-                class="w-full"
-              />
-              <div class="px-6 py-6">
-                <h3>
-                  <a
-                    href=""
-                    class="mb-3 block truncate text-xl font-semibold text-mydark hover:text-primary dark:text-white dark:hover:text-primary"
-                    >Seputar Teknologi</a
-                  >
-                </h3>
-                <p class="mb-6 text-slate-800 dark:text-slate-300">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Labore, eveniet?
-                </p>
-                <a
-                  href="#"
-                  class="rounded-lg bg-primary px-4 py-2 text-sm text-white duration-300 hover:opacity-80"
-                  >Baca Selengkapnya</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="w-full px-4 md:w-1/2 xl:w-1/3">
-            <div
-              class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-[#495057]"
-            >
-              <img
-                src="https://source.unsplash.com/360x200?ai"
-                alt="AI"
-                class="w-full"
-              />
-              <div class="px-6 py-6">
-                <h3>
-                  <a
-                    href=""
-                    class="mb-3 block truncate text-xl font-semibold text-mydark hover:text-primary dark:text-white dark:hover:text-primary"
-                    >Perkembangan AI ( Artivisual inteligent )</a
-                  >
-                </h3>
-                <p class="mb-6 text-slate-800 dark:text-slate-300">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Labore, eveniet?
-                </p>
-                <a
-                  href="#"
-                  class="rounded-lg bg-primary px-4 py-2 text-sm text-white duration-300 hover:opacity-80"
-                  >Baca Selengkapnya</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- Blog end-->
-
     <!-- Contact -->
     <section id="contact" class="pb-32 pt-36 dark:bg-[#343a40]">
       <div class="container">
-        <div class="w-full px-4" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100">
+        <div
+          class="w-full px-4"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+          data-aos-delay="100"
+        >
           <div class="mx-auto mb-16 max-w-xl text-center">
             <h4 class="mb-2 text-lg font-semibold text-primary">Contact</h4>
             <h2
@@ -1092,7 +1126,12 @@
 
         <form action="">
           <div class="mx-auto w-full md:w-1/2">
-            <div class="mb-8 w-full px-4" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="150">
+            <div
+              class="mb-8 w-full px-4"
+              data-aos="fade-down"
+              data-aos-duration="1000"
+              data-aos-delay="150"
+            >
               <label for="name" class="text-base font-bold text-primary"
                 >Nama</label
               >
@@ -1102,7 +1141,12 @@
                 class="mt-2 w-full rounded-md bg-slate-200 p-2 text-mydark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
               />
             </div>
-            <div class="mb-6 w-full px-4" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
+            <div
+              class="mb-6 w-full px-4"
+              data-aos="fade-down"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
               <label for="email" class="text-base font-bold text-primary"
                 >Email</label
               >
@@ -1117,7 +1161,12 @@
                 Email tidak valid.
               </p>
             </div>
-            <div class="mb-8 w-full px-4" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="250">
+            <div
+              class="mb-8 w-full px-4"
+              data-aos="fade-down"
+              data-aos-duration="1000"
+              data-aos-delay="250"
+            >
               <label for="pesan" class="text-base font-bold text-primary"
                 >Pesan</label
               >
@@ -1127,7 +1176,12 @@
                 class="mt-2 h-28 w-full rounded-md bg-slate-200 p-2 text-mydark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
               ></textarea>
             </div>
-            <div class="w-full px-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+            <div
+              class="w-full px-4"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="300"
+            >
               <button
                 class="w-full rounded-full bg-primary px-6 py-2 text-base font-semibold uppercase text-white transition duration-300 hover:opacity-90 hover:shadow-lg"
               >
@@ -1144,14 +1198,24 @@
     <section class="bg-mydark pb-12 pt-24">
       <div class="container">
         <div class="mx-auto flex flex-wrap justify-center md:w-10/12">
-          <div class="mb-12 w-full px-4 text-slate-200 md:w-1/3" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100">
+          <div
+            class="mb-12 w-full px-4 text-slate-200 md:w-1/3"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
             <h2 class="mb-5 text-4xl font-bold text-primary">Aclwebdev</h2>
             <h3 class="mb-2 text-2xl font-bold">Hubungi Kami</h3>
             <p>aclprcjt@gmail.com</p>
             <p>Jl. Trans Sulawesi, Desa Matako</p>
             <p>Kec.Tojo Barat</p>
           </div>
-          <div class="mb-12 w-full px-4 md:w-1/3" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="150">
+          <div
+            class="mb-12 w-full px-4 md:w-1/3"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-delay="150"
+          >
             <h3 class="mb-5 text-xl font-semibold text-white">
               Project Terbaru
             </h3>
@@ -1179,7 +1243,12 @@
               </li>
             </ul>
           </div>
-          <div class="mb-12 w-full px-4 md:w-1/3" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
+          <div
+            class="mb-12 w-full px-4 md:w-1/3"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
             <h3 class="mb-5 text-xl font-semibold text-white">Tautan</h3>
             <ul>
               <li>
@@ -1203,20 +1272,6 @@
                   >Portfolio</a
                 >
               </li>
-              <!-- <li>
-                <a
-                  href="#clients"
-                  class="mb-2 inline-block text-base text-slate-200 hover:text-primary"
-                  >Clients</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#blog"
-                  class="mb-2 inline-block text-base text-slate-200 hover:text-primary"
-                  >Blog</a
-                >
-              </li> -->
               <li>
                 <a
                   href="#contact"
@@ -1228,14 +1283,15 @@
           </div>
         </div>
 
-        <div class="w-full border-t border-slate-500 pt-10  mb-8">
+        <div class="mb-8 w-full border-t border-slate-500 pt-10">
           <div class="mb-5 flex items-center justify-center">
             <!-- youtube -->
             <a
               href="https://youtube.com/@acelwebdev"
               target="_blank"
               class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-400 text-primary transition ease-in-out hover:border-primary hover:bg-primary hover:text-white"
-              data-aos="zoom-in" data-aos-delay="50"
+              data-aos="zoom-in"
+              data-aos-delay="50"
             >
               <svg
                 class="fill-current"
@@ -1255,7 +1311,8 @@
               href="https://instagram.com/aclwebdev"
               target="_blank"
               class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-400 text-primary transition ease-in-out hover:border-primary hover:bg-primary hover:text-white"
-              data-aos="zoom-in" data-aos-delay="100"
+              data-aos="zoom-in"
+              data-aos-delay="100"
             >
               <svg
                 class="fill-current"
@@ -1275,7 +1332,8 @@
               href="https://www.tiktok.com/@aclwebdev?_t=8eMKjiuFdJ4&_r=1"
               target="_blank"
               class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-400 text-primary transition ease-in-out hover:border-primary hover:bg-primary hover:text-white"
-              data-aos="zoom-in" data-aos-delay="150"
+              data-aos="zoom-in"
+              data-aos-delay="150"
             >
               <svg
                 class="fill-current"
@@ -1295,7 +1353,8 @@
               href="#"
               target="_blank"
               class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-400 text-primary transition ease-in-out hover:border-primary hover:bg-primary hover:text-white"
-              data-aos="zoom-in" data-aos-delay="200"
+              data-aos="zoom-in"
+              data-aos-delay="200"
             >
               <svg
                 class="fill-current"
@@ -1315,7 +1374,8 @@
               href="https://github.com/acelproject"
               target="_blank"
               class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-400 text-primary transition ease-in-out hover:border-primary hover:bg-primary hover:text-white"
-              data-aos="zoom-in" data-aos-delay="250"
+              data-aos="zoom-in"
+              data-aos-delay="250"
             >
               <svg
                 class="fill-current"

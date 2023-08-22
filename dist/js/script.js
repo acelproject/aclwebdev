@@ -173,23 +173,45 @@ if (
 
 //slider in portofolio section
 
-const swiper = new Swiper('.swiper.slider-large-device', {
-  speed:400,
-  spaceBetween:10,
-  slidesPerView:2,
-  pagination:{
-    el:'.swiper-pagination',
-    type:'bullets',
-    clickable:true,
-  }
+const swiper = new Swiper(".swiper.slider-large-device", {
+  // effect:'cards',
+  speed: 1000,
+  spaceBetween: 10,
+  slidesPerView: 2,
+  pagination: {
+    el: ".swiper-pagination",
+    type: "bullets",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
 });
-const swiperPhone = new Swiper('.swiper.slider-phone-device', {
-  speed:400,
-  spaceBetween:10,
-  slidesPerView:1,
-  pagination:{
-    el:'.swiper-pagination',
-    type:'bullets',
-    clickable:true,
-  }
+
+const swiperPhone = new Swiper(".swiper.slider-phone-device", {
+  speed: 400,
+  spaceBetween: 10,
+  slidesPerView: 1,
+  pagination: {
+    el: ".swiper-pagination",
+    type: "bullets",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
 });

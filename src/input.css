@@ -68,7 +68,7 @@ nav ul .group:hover::after {
 .hero-image {
   @apply border-primary;
   box-shadow: 8px 8px #ffbe0b;
-  border: 2px solid #ffbe0b;
+  border:2px solid #ffbe0b;
 }
 
 .portofolio {
@@ -116,6 +116,21 @@ nav ul .group:hover::after {
 .portofolio .slider-phone-device .card:hover img {
   @apply scale-100 grayscale-0;
 }
+
+.portofolio .pagination .swiper-button-prev{
+  @apply absolute left-24 mt-7 text-primary;
+}
+.portofolio .pagination .swiper-button-next{
+  @apply absolute right-24 mt-7 text-primary;
+}
+.portofolio .pagination-phone .swiper-button-prev{
+  @apply mt-1 text-primary;
+}
+.portofolio .pagination-phone .swiper-button-next{
+  @apply  mt-1 text-primary;
+}
+
+
 
 @media only screen and (max-width: 415px) {
   .portofolio {
