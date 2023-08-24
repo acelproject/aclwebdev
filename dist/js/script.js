@@ -109,24 +109,14 @@ window.addEventListener("click", (e) => {
 
 const btnDarkMode = document.querySelector("#dark-mode");
 const darkIcon = document.querySelector("#dark-icon");
-const html = document.querySelector("body");
+const html = document.querySelector("html");
 const inputdarkMode = document.querySelector("#input-dark");
 
 btnDarkMode.addEventListener("click", () => {
-  // const e = darkIcon.classList.toggle("darkmode-active");
-
-  // html.classList.toggle("dark");
-
-  // if (e == true) {
-  // } else {
-  // }
-
   if (inputdarkMode.checked) {
     html.classList.add("dark");
-    // darkIcon.classList.add("darkmode-active");
     localStorage.theme = "dark";
   } else {
-    // darkIcon.classList.remove("darkmode-active");
     html.classList.remove("dark");
     localStorage.theme = "light";
   }
@@ -138,10 +128,7 @@ if (
     window.matchMedia("(prefers-color-scheme: dark)").matches)
 ) {
   inputdarkMode.checked = true;
-  // darkIcon.classList.add("darkmode-active");
-  // inputdarkMode.checked = darkIcon.classList.add("darkmode-active");
 } else {
-  // darkIcon.classList.remove("darkmode-active");
   inputdarkMode.checked = false;
 }
 
@@ -152,10 +139,8 @@ const inputDarkSmall = document.querySelector("#input-dark-small");
 btnDarkModeSmallDev.addEventListener("click", () => {
   if (inputDarkSmall.checked) {
     html.classList.add("dark");
-    // darkIcon.classList.add("darkmode-active");
     localStorage.theme = "dark";
   } else {
-    // darkIcon.classList.remove("darkmode-active");
     html.classList.remove("dark");
     localStorage.theme = "light";
   }
