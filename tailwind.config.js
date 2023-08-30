@@ -21,15 +21,15 @@ module.exports = {
       },
       animation: {
         "spin-slow": "spin 2s linear infinite",
-        goyang: "goyang 1s ease-in-out infinite",
+        goyang: "goyang 1s ease-in-out",
         scrollup: "scrollup 1s ease-in-out infinite",
         "naik-turun": "naikTurun 1s ease-in-out",
       },
       keyframes: {
         goyang: {
           "0%,100%": { transform: "rotate(-3deg)" },
-          "50%,70%": { transform: "translateY(-15px)" },
-          "70%": { transform: "translateY(15px)" },
+          "50%,70%": { transform: "translateY(15px)" },
+          "70%": { transform: "translateY(-15px)" },
           "50%": { transform: "rotate(3deg)" },
         },
         scrollup: {

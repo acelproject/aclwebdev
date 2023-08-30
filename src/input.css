@@ -114,6 +114,160 @@ nav ul .group:hover::after {
   @apply scale-100 grayscale-0;
 }
 
+/* bazar */
+.bazar .github{
+  transition:0.4s;
+}
+
+.bazar .github-bg-hov{
+  transition:0.4s;
+}
+.bazar .github svg.active{
+  @apply animate-goyang;
+}
+.bazar .github-bg-hov.active{
+  transform : scale(90);
+}
+.bazar .github.active{
+  transform : scale(90);
+}
+
+/* agency */
+.agency .github{
+  transition:0.4s;
+}
+
+.agency .github-bg-hov{
+  transition:0.4s;
+}
+.agency .github svg.active{
+  @apply animate-goyang;
+}
+.agency .github-bg-hov.active{
+  transform : scale(90);
+}
+.agency .github.active{
+  transform : scale(90);
+}
+/* mymovie */
+.mymovie .github{
+  transition:0.4s;
+}
+
+.mymovie .github-bg-hov{
+  transition:0.4s;
+}
+.mymovie .github svg.active{
+  @apply animate-goyang;
+}
+.mymovie .github-bg-hov.active{
+  transform : scale(90);
+}
+.mymovie .github.active{
+  transform : scale(90);
+}
+/* aclhutz */
+.aclhutz .github{
+  transition:0.4s;
+}
+
+.aclhutz .github-bg-hov{
+  transition:0.4s;
+}
+.aclhutz .github svg.active{
+  @apply animate-goyang;
+}
+.aclhutz .github-bg-hov.active{
+  transform : scale(90);
+}
+.aclhutz .github.active{
+  transform : scale(90);
+}
+/* bazar-phone */
+.bazar-phone .github{
+  transition:0.4s;
+}
+
+.bazar-phone .github-bg-hov{
+  transition:0.4s;
+}
+.bazar-phone .github svg.active{
+  @apply animate-goyang;
+}
+.bazar-phone .github-bg-hov.active{
+  transform : scale(90);
+}
+.bazar-phone .github.active{
+  transform : scale(90);
+}
+
+/* agency-phone */
+.agency-phone .github{
+  transition:0.4s;
+}
+
+.agency-phone .github-bg-hov{
+  transition:0.4s;
+}
+.agency-phone .github svg.active{
+  @apply animate-goyang;
+}
+.agency-phone .github-bg-hov.active{
+  transform : scale(90);
+}
+.agency-phone .github.active{
+  transform : scale(90);
+}
+
+/* mymovie-phone */
+.mymovie-phone .github{
+  transition:0.4s;
+}
+
+.mymovie-phone .github-bg-hov{
+  transition:0.4s;
+}
+.mymovie-phone .github svg.active{
+  @apply animate-goyang;
+}
+.mymovie-phone .github-bg-hov.active{
+  transform : scale(90);
+}
+.mymovie-phone .github.active{
+  transform : scale(90);
+}
+
+/* aclhutz-phone */
+.aclhutz-phone .github{
+  transition:0.4s;
+}
+
+.aclhutz-phone .github-bg-hov{
+  transition:0.4s;
+}
+.aclhutz-phone .github svg.active{
+  @apply animate-goyang;
+}
+.aclhutz-phone .github-bg-hov.active{
+  transform : scale(90);
+}
+.aclhutz-phone .github.active{
+  transform : scale(90);
+}
+
+/* .portofolio .slider-phone-device .card .github:hover, .portofolio .slider-large-device .card .github:hover{
+transform : scale(40);
+}
+.portofolio .slider-phone-device .card .github:hover span, .portofolio .slider-large-device .card .github:hover span{
+  @apply invisible;
+}
+.portofolio .slider-phone-device .card .github:hover .dec-hover, .portofolio .slider-large-device .card .github:hover .dec-hover{
+  @apply top-0 left-0;
+  transform : scale(1);
+} */
+
+
+
 .portofolio .pagination .swiper-button-prev {
   @apply absolute left-24 mt-7 text-primary;
 }

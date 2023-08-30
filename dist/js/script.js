@@ -200,3 +200,209 @@ const swiperPhone = new Swiper(".swiper.slider-phone-device", {
     el: ".swiper-scrollbar",
   },
 });
+
+// bazar portfolio
+const portofolioGithubButton = document.querySelector(
+  ".bazar .github"
+);
+const portofolioDetail = document.querySelector(
+  ".bazar .dec-hover"
+);
+const portofolioBgHover = document.querySelector(
+  ".bazar .github-bg-hov"
+);
+
+const cardGithubsvg = document.querySelector(
+  ".bazar .github svg"
+);
+
+
+portofolioGithubButton.addEventListener("click", () => {
+   portofolioBgHover.classList.toggle('active');
+   portofolioDetail.classList.toggle('translate-y-[270px]');
+   cardGithubsvg.classList.add('active');
+   setTimeout(() => {
+    cardGithubsvg.classList.remove('active');
+   }, 1000);
+});
+
+// agency portfolio
+const portofolioGithubButtonAgency = document.querySelector(
+  ".agency .github"
+);
+const portofolioDetailagency = document.querySelector(
+  ".agency .dec-hover"
+);
+const portofolioBgHoveragency = document.querySelector(
+  ".agency .github-bg-hov"
+);
+
+const cardGithubsvgagency = document.querySelector(
+  ".agency .github svg"
+);
+
+
+portofolioGithubButtonAgency.addEventListener("click", () => {
+   portofolioBgHoveragency.classList.toggle('active');
+   portofolioDetailagency.classList.toggle('translate-y-[270px]');
+   cardGithubsvgagency.classList.add('active');
+   setTimeout(() => {
+    cardGithubsvgagency.classList.remove('active');
+   }, 1000);
+});
+
+// mymovie portfolio
+const portofolioGithubButtonmymovie = document.querySelector(
+  ".mymovie .github"
+);
+const portofolioDetailmymovie = document.querySelector(
+  ".mymovie .dec-hover"
+);
+const portofolioBgHovermymovie = document.querySelector(
+  ".mymovie .github-bg-hov"
+);
+
+const cardGithubsvgmymovie = document.querySelector(
+  ".mymovie .github svg"
+);
+
+
+portofolioGithubButtonmymovie.addEventListener("click", () => {
+   portofolioBgHovermymovie.classList.toggle('active');
+   portofolioDetailmymovie.classList.toggle('translate-y-[270px]');
+   cardGithubsvgmymovie.classList.add('active');
+   setTimeout(() => {
+    cardGithubsvgmymovie.classList.remove('active');
+   }, 1000);
+});
+
+// aclhutz portfolio
+const portofolioGithubButtonaclhutz = document.querySelector(
+  ".aclhutz .github"
+);
+const portofolioDetailaclhutz = document.querySelector(
+  ".aclhutz .dec-hover"
+);
+const portofolioBgHoveraclhutz = document.querySelector(
+  ".aclhutz .github-bg-hov"
+);
+
+const cardGithubsvgaclhutz = document.querySelector(
+  ".aclhutz .github svg"
+);
+
+
+portofolioGithubButtonaclhutz.addEventListener("click", () => {
+   portofolioBgHoveraclhutz.classList.toggle('active');
+   portofolioDetailaclhutz.classList.toggle('translate-y-[270px]');
+   cardGithubsvgaclhutz.classList.add('active');
+   setTimeout(() => {
+    cardGithubsvgaclhutz.classList.remove('active');
+   }, 1000);
+});
+
+
+// portfolio phone klik
+// Bazar portfolio
+const githubButtonBazarPhone = document.querySelector(
+  ".bazar-phone .github"
+);
+const detailBazarPhone = document.querySelector(
+  ".bazar-phone .dec-hover"
+);
+const bgHoverBazarPhone = document.querySelector(
+  ".bazar-phone .github-bg-hov"
+);
+
+const cardGithubsvgBazarPhone = document.querySelector(
+  ".bazar-phone .github svg"
+);
+
+
+githubButtonBazarPhone.addEventListener("click", () => {
+   bgHoverBazarPhone.classList.toggle('active');
+   detailBazarPhone.classList.toggle('translate-y-[230px]');
+   cardGithubsvgBazarPhone.classList.add('active');
+   setTimeout(() => {
+    cardGithubsvgBazarPhone.classList.remove('active');
+   }, 1000);
+});
+
+// agency portfolio
+const githubButtonagencyPhone = document.querySelector(
+  ".agency-phone .github"
+);
+const detailagencyPhone = document.querySelector(
+  ".agency-phone .dec-hover"
+);
+const bgHoveragencyPhone = document.querySelector(
+  ".agency-phone .github-bg-hov"
+);
+
+const cardGithubsvgagencyPhone = document.querySelector(
+  ".agency-phone .github svg"
+);
+
+
+githubButtonagencyPhone.addEventListener("click", () => {
+   bgHoveragencyPhone.classList.toggle('active');
+   detailagencyPhone.classList.toggle('translate-y-[230px]');
+   cardGithubsvgagencyPhone.classList.add('active');
+   setTimeout(() => {
+    cardGithubsvgagencyPhone.classList.remove('active');
+   }, 1000);
+});
+
+// mymovie portfolio
+const githubButtonmymoviePhone = document.querySelector(
+  ".mymovie-phone .github"
+);
+const detailmymoviePhone = document.querySelector(
+  ".mymovie-phone .dec-hover"
+);
+const bgHovermymoviePhone = document.querySelector(
+  ".mymovie-phone .github-bg-hov"
+);
+
+const cardGithubsvgmymoviePhone = document.querySelector(
+  ".mymovie-phone .github svg"
+);
+
+
+githubButtonmymoviePhone.addEventListener("click", () => {
+   bgHovermymoviePhone.classList.toggle('active');
+   detailmymoviePhone.classList.toggle('translate-y-[230px]');
+   cardGithubsvgmymoviePhone.classList.add('active');
+   setTimeout(() => {
+    cardGithubsvgmymoviePhone.classList.remove('active');
+   }, 1000);
+});
+
+// aclhutz portfolio
+const githubButtonaclhutzPhone = document.querySelector(
+  ".aclhutz-phone .github"
+);
+const detailaclhutzPhone = document.querySelector(
+  ".aclhutz-phone .dec-hover"
+);
+const bgHoveraclhutzPhone = document.querySelector(
+  ".aclhutz-phone .github-bg-hov"
+);
+
+const cardGithubsvgaclhutzPhone = document.querySelector(
+  ".aclhutz-phone .github svg"
+);
+
+
+githubButtonaclhutzPhone.addEventListener("click", () => {
+   bgHoveraclhutzPhone.classList.toggle('active');
+   detailaclhutzPhone.classList.toggle('translate-y-[230px]');
+   cardGithubsvgaclhutzPhone.classList.add('active');
+   setTimeout(() => {
+    cardGithubsvgaclhutzPhone.classList.remove('active');
+   }, 1000);
+});
+
+
+
+
