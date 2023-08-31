@@ -12,6 +12,7 @@ module.exports = {
         primary: "#ffbe0b",
         mydark: "#202020",
         bglight: "#f8f9fa",
+        secDark: "#343a40",
       },
       fontFamily: {
         viga: ["Viga"],
