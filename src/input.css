@@ -63,28 +63,16 @@ nav ul .group:hover::after {
 }
 
 .hero-image {
-  @apply border-primary rounded-sm;
-  box-shadow: 8px 8px #ffbe0b;
-  border: 1px solid #ffbe0b;
+  @apply  rounded-full bg-primary;
+  /* box-shadow: 8px 8px #ffbe0b; */
+  border: 2px solid #ffbe0b;
 }
 
-.hero-image-wrap:before{
-  @apply md:w-24 w-20 md:h-24 h-20 rounded-sm bg-primary block absolute -left-8 -top-8;
+
+.hero-image-wrap:after{
+  @apply md:w-24 w-20 md:h-24 h-20 rounded-md bg-primary block absolute left-3 bottom-3;
   content : '';
   transition:0.4s;
-}
-.hero-image-wrap:after{
-  @apply md:w-36 w-32 md:h-36 h-32 border-2  rounded-sm border-primary dark:border-2 dark:border-primary block -bottom-12 -right-12 absolute;
-  content : '';
-  transition:0.5s;
-}
-.hero-image-wrap:hover:before{
-  @apply  md:left-52 left-44 -top-8;
-  content : '';
-}
-.hero-image-wrap:hover:after{
-  @apply -bottom-12 md:right-40 right-32;
-  content : '';
 }
 
 
