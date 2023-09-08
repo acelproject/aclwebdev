@@ -29,8 +29,8 @@ module.exports = {
       keyframes: {
         goyang: {
           "0%,100%": { transform: "rotate(-3deg)" },
-          "50%,70%": { transform: "translateY(15px)" },
-          "70%": { transform: "translateY(-15px)" },
+          "50%,70%": { transform: "translateY(10px)" },
+          "70%": { transform: "translateY(-10px)" },
           "50%": { transform: "rotate(3deg)" },
         },
         scrollup: {

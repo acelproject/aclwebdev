@@ -33,7 +33,7 @@
       }
     </script>
   </head>
-  <body class="dark:bg-mydark">
+  <body class="dark:bg-mydark transition">
     <!-- Loader animastion -->
     <div
       class="load-wrapper fixed z-[9999] flex h-[100vh] w-full flex-col flex-wrap items-center justify-center overflow-hidden bg-[#000000a1]"
@@ -102,7 +102,7 @@
     </div>
     <!-- Menu nav on small devices end-->
     <header
-      class="absolute left-0 top-0 flex h-[100px] w-full items-center transition-all ease-linear lg:px-36"
+      class="absolute left-0 top-0 z-40 flex h-[100px] w-full items-center transition-all ease-linear lg:px-36"
     >
       <div class="container">
         <div class="relative flex items-center justify-between">
@@ -229,7 +229,7 @@
     <!-- Hero  -->
     <section
       id="home"
-      class="hero -z-20 pt-36 transition dark:bg-mydark lg:h-[100vh]"
+      class="hero pt-36 transition dark:bg-mydark lg:h-[100vh]"
     >
       <div class="container">
         <div class="flex flex-wrap">
@@ -384,13 +384,11 @@
           </div>
           <div
             class="hero-image-wrap relative  mx-auto mt-14 h-[220px] w-[220px] md:mx-0 md:mt-7 md:h-[270px] md:w-[270px] lg:right-[-160px] lg:top-6"
-            data-aos="fade-up"
+            data-aos="fade-down"
             data-aos-delay="2500"
           >
             <div
-              class="hero-image absolute h-full z-20 w-full overflow-hidden bg-white dark:bg-mydark"
-              data-aos="fade-down"
-              data-aos-delay="2500"
+              class="hero-image absolute h-full z-20 w-full overflow-hidden bg-white"
             >
               <img
                 src="dist/img/acel.png"
@@ -431,7 +429,7 @@
             <p
               class="max-w-xl text-base text-slate-700 dark:text-slate-300 lg:text-lg"
             >
-              Hai, saya yohanes Marchel,Seorang Web Developer yang berpengalaman
+              Hai, saya Marchel Lumimpah,Seorang Web Developer yang berpengalaman
               dalam pengembangan front-end dan back-end serta pemahaman mendalam
               tentang desain antarmuka pengguna.
               <br /><br />
