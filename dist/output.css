@@ -2395,10 +2395,6 @@ transform : scale(40);
     padding-top: 9rem;
   }
 
-  .lg\:pt-3 {
-    padding-top: 0.75rem;
-  }
-
   .lg\:pt-40 {
     padding-top: 10rem;
   }
