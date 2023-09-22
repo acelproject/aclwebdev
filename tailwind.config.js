@@ -25,6 +25,7 @@ module.exports = {
         goyang: "goyang 1s ease-in-out",
         scrollup: "scrollup 1s ease-in-out infinite",
         "naik-turun": "naikTurun 1s ease-in-out",
+        progress : "progress"
       },
       keyframes: {
         goyang: {
@@ -43,6 +44,10 @@ module.exports = {
           "0%": { transform: "translateY(-300px)" },
           "100%": { transform: "translateY(0)" },
         },
+        progress: {
+          '0%' : {transform: "scaleX(0)"},
+          '100%' : {transform: "scaleX(1)"}
+        }
       },
     },
   },
